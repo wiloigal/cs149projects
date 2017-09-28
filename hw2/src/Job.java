@@ -3,12 +3,14 @@ public class Job {
 	public float arrivalTime;
 	public float expectedRunTime;
 	public int priority;
+	public String name;
 	
 
-	public Job(float arrivalTime, float expectedRunTime, int priority){
+	public Job(float arrivalTime, float expectedRunTime, int priority, String name){
 		this.arrivalTime = arrivalTime;
 		this.expectedRunTime = expectedRunTime;
 		this.priority = priority;
+		this.name = name;
 	}
 	public void doJob(){
 		expectedRunTime -= 1;

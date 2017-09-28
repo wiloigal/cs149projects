@@ -2,7 +2,15 @@ import java.util.*;
 
 public class ShortestRemainingTime {
 	
-	private ArrayList<Job> jobs;
+	private PriorityQueue waitingJobs;//sort by arrival time
+	private PriorityQueue<Job> readyJobs;
+	private Job jobBeingWorked;
+	
+	int startTime = 0;
+	int finishTime = 0;
+	
+	
+	
 	private static Comparator<Job> compareByArrivalTime = new Comparator<Job>(){
 		@Override
 		public int compare(Job o1, Job o2) {
@@ -35,79 +43,36 @@ public class ShortestRemainingTime {
 		}
 		
 	};
+	
+	
 	/////////Constructors//////////////////////////////////
-	public ShortestRemainingTime(){                      //
-		jobs = new ArrayList<Job>();					 //
-	}													 //
-	public ShortestRemainingTime(ArrayList<Job> jobs){   //
-		this.jobs = jobs;								 //
-	}													 //
-	///////////////////////////////////////////////////////
 	
-	
-	private boolean allJobsCompleted(){
-		for(Job j: jobs)
-			if(!j.isComplete())
-				return false;
-	
-		return true;
+	public ShortestRemainingTime(){                     
+		waitingJobs = new PriorityQueue<>(compareByArrivalTime);
+		readyJobs = new PriorityQueue<Job>(compareByArrivalTime);
 	}
+										 
+	
 	
 	private void doJobs(PriorityQueue<Job> queue){
-		
-		
-		Stack<Job> jobsStarted = new Stack<Job>();
-		PriorityQueue<Job> readyJobs = new PriorityQueue<Job>(compareByArrivalTime);
-		
-		
-		readyJobs.add(jobs.get(0));
-		
-		
-		for(double f = readyJobs.peek().arrivalTime; f < 100; f+= Double.MIN_VALUE){
-			//set job to started if it hasn't started yet and the 
-			//new expected run time is less than old expected run time
-		
-			if(!jobsStarted.contains(readyJobs.peek())){
-				jobsStarted.push(readyJobs.peek());
-			}
-			//do the job set to start
-			jobsStarted.peek().doJob();
+		//add jobs that have been seen by now
+		while(!queue.isEmpty() || !readyJobs.isEmpty() ||!waitingJobs.isEmpty()){
+			while(!queue.isEmpty() && queue.peek().arrivalTime <= finishTime)
+				readyJobs.add(queue.poll());
 			
-			//if job is complete take it out of started and out of 
-			// received and into complete
-			if(jobsStarted.peek().isComplete()){
-				readyJobs.remove(jobsStarted.peek());
-				jobsStarted.pop();
-			}
-			//if new arrived job has expected 
-			//run time less than current
+			jobBeingWorked = readyJobs.poll();
 			
-			
-			
-			
-				
-			
+			startTime = Math.max((int) Math.ceil(jobBeingWorked.arrivalTime), finishTime);
+			finishTime = startTime + 1;
 		}
-
+	
 	}
 	
 	public static void main(String[] args){
 		Random rand = new Random();
-		StringBuffer sb = new StringBuffer("Josh");
-
-		sb.reverse();
-		System.out.println(sb);
 		
 		ShortestRemainingTime str = new ShortestRemainingTime();
-		PriorityQueue<Job> jobsReceived = new PriorityQueue<Job>(compareByArrivalTime);
-
-		for(int i = 0; i < 10; i++){
-			jobsReceived.add(new Job(0 + rand.nextFloat()*(99-0), (float)(0.1 + rand.nextFloat()*(10-0.1)),(int)(1 + rand.nextFloat()*(4-1))));
-			
-			
-		}
-		for(int i = 0; i < 10; i++)
-			System.out.println(jobsReceived.remove().arrivalTime);
-		
+		str.doJobs();
 	}
+	
 }
