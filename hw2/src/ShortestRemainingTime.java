@@ -45,7 +45,6 @@ public class ShortestRemainingTime {
 
 
 	/////////Constructors//////////////////////////////////
-
 	public ShortestRemainingTime(){                     
 		waitingJobs = new PriorityQueue<>(compareByRemainingTime);
 		workingJobs = new PriorityQueue<Job>(compareByRemainingTime);
@@ -54,29 +53,36 @@ public class ShortestRemainingTime {
 
 
 	private Queue<Job> doJobs(PriorityQueue<Job> queue){
-		ArrayList<Job> dummyQ = new ArrayList<>(queue);
-		Queue<Job> newQueue = new LinkedList<Job>();//new queue
+		//new queue length will be this integer when the jobs are all finished
+		int limit = queue.size();
+		//dummy queue because you don't want to change the data of actual queue
+		PriorityQueue<Job> dummyQ = new PriorityQueue<>(queue);
+		
+		//queue to return 
+		Queue<Job> newQueue = new LinkedList<Job>();
+		
 		//we already have the queue sorted by arrival time
 		//need a queue sorted by time remaining
 		PriorityQueue<Job> jobsWorking = new PriorityQueue<Job>(compareByRemainingTime);
 
-		//work on job until timer reaches "queue" next arrival time
-
+		//timer goes to the time the first job is seen
 		timer = (int)queue.peek().expectedRunTime;
-		Job jobFinishing = jobsWorking.peek();
-		while(timer <= 100){
-			if(queue.peek() != null &&(int)queue.peek().arrivalTime <= timer){
-				jobsWorking.add(queue.poll());
+		Job jobFinishing;
+		Job jobAdding;
+		while(newQueue.size() != limit){//loop until 100 quanta
+			//
+			if(dummyQ.peek() != null &&(int)dummyQ.peek().arrivalTime + 1 <= timer){
+				jobAdding = dummyQ.poll();
+				jobAdding.setStartTime(timer);
+				jobsWorking.add(jobAdding);
 			}
 			if(jobsWorking.size() != 0){
-				//testing
-				System.out.println(jobsWorking.peek().arrivalTime + "----- " + timer);
-				//
 				jobsWorking.peek().doJob();
-				jobFinishing = jobsWorking.peek();
 				if(jobsWorking.peek().isComplete()){
+					jobFinishing = jobsWorking.poll();
+					jobFinishing.setEndTime(timer);
 					dummyQ.remove(jobFinishing);
-					newQueue.add(jobsWorking.poll());
+					newQueue.add(jobFinishing);
 				}
 			}
 
@@ -94,7 +100,7 @@ public class ShortestRemainingTime {
 		Queue<Job> q = str.doJobs(arg);
 
 		for(Job j : q)
-			System.out.println(j.getTimeLeft() + " " + j.arrivalTime);
+			System.out.println(j.getEndTime() + " " + j.arrivalTime + " " + j.getExpectedRunTime() + "  " + j.name);
 		//rand.nextInt((max - min) + 1) + min;
 	}
 

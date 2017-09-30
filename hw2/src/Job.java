@@ -28,6 +28,10 @@ public class Job {
 		jobs.add(new Job(0 + r.nextFloat()*(100 - 0),0 + r.nextFloat()*(10-0), r.nextInt((4 - 1) + 1) +1, "B"));
 		jobs.add(new Job(0 + r.nextFloat()*(100 - 0),0 + r.nextFloat()*(10-0), r.nextInt((4 - 1) + 1) +1, "C"));
 		jobs.add(new Job(0 + r.nextFloat()*(100 - 0),0 + r.nextFloat()*(10-0), r.nextInt((4 - 1) + 1) +1, "D"));
+		jobs.add(new Job(0 + r.nextFloat()*(100 - 0),0 + r.nextFloat()*(10-0), r.nextInt((4 - 1) + 1) +1, "E"));
+		jobs.add(new Job(0 + r.nextFloat()*(100 - 0),0 + r.nextFloat()*(10-0), r.nextInt((4 - 1) + 1) +1, "F"));
+		jobs.add(new Job(0 + r.nextFloat()*(100 - 0),0 + r.nextFloat()*(10-0), r.nextInt((4 - 1) + 1) +1, "G"));
+		//jobs.add(new Job(0 + r.nextFloat()*(100 - 0),0 + r.nextFloat()*(10-0), r.nextInt((4 - 1) + 1) +1, "H"));
 		
 		return jobs;
 		
@@ -44,6 +48,9 @@ public class Job {
 	}
 	public float getExpectedRunTime(){
 		return expectedRunTime;
+	}
+	public int getEndTime(){
+		return endTime;
 	}
 	public void setStartTime(int time){
 		startTime = time;
