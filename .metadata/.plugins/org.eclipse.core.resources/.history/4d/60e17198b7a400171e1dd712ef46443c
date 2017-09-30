@@ -1,0 +1,40 @@
+
+public class Job {
+	public float arrivalTime;
+	public float expectedRunTime;
+	public int priority;
+	public String name;
+
+	private float timeLeft;
+	private int startTime = 0;
+	private int endTime = 0;
+
+
+	public Job(float arrivalTime, float expectedRunTime, int priority, String name){
+		this.arrivalTime = arrivalTime;
+		this.expectedRunTime = expectedRunTime;
+		this.priority = priority;
+		this.name = name;
+		this.timeLeft = expectedRunTime;
+	}
+	public void doJob(){
+		timeLeft -= 1;
+
+	}
+	public boolean isComplete(){
+		return timeLeft <= 0;
+	}
+	public float getTimeLeft(){
+		return timeLeft;
+	}
+	public float getExpectedRunTime(){
+		return expectedRunTime;
+	}
+	public void setStartTime(int time){
+		startTime = time;
+	}
+	public void setEndTime(int time){
+		endTime = time;
+	}
+
+}

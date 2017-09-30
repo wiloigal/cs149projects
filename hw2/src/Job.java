@@ -2,6 +2,7 @@ import java.util.PriorityQueue;
 import java.util.Random;
 
 public class Job {
+//<<<<<<< HEAD
 	public float arrivalTime;
 	public float expectedRunTime;
 	public int priority;
@@ -58,5 +59,4 @@ public class Job {
 	public void setEndTime(int time){
 		endTime = time;
 	}
-
 }
