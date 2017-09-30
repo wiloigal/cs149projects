@@ -8,6 +8,8 @@ public class ShortestRemainingTime {
 
 	int timer = 0;
 
+
+
 	static Comparator<Job> compareByArrivalTime = new Comparator<Job>(){
 		@Override
 		public int compare(Job o1, Job o2) {
@@ -22,11 +24,13 @@ public class ShortestRemainingTime {
 				return 1;
 			return 0;
 		}
+
 	};
 	private static Comparator<Job> compareByRemainingTime = new Comparator<Job>(){
 		@Override
 		public int compare(Job o1, Job o2) {
 			// TODO Auto-generated method stub
+
 			float oneComparison = o1.getTimeLeft();
 			float twoComparison = o2.getTimeLeft();
 
@@ -40,7 +44,7 @@ public class ShortestRemainingTime {
 	};
 
 
-	/////////Constructor//////////////////////////////////
+	/////////Constructors//////////////////////////////////
 	public ShortestRemainingTime(){                     
 		waitingJobs = new PriorityQueue<>(compareByRemainingTime);
 		workingJobs = new PriorityQueue<Job>(compareByRemainingTime);
@@ -49,10 +53,8 @@ public class ShortestRemainingTime {
 
 
 	private Queue<Job> doJobs(PriorityQueue<Job> queue){
-		
 		//new queue length will be this integer when the jobs are all finished
 		int limit = queue.size();
-		
 		//dummy queue because you don't want to change the data of actual queue
 		PriorityQueue<Job> dummyQ = new PriorityQueue<>(queue);
 		
@@ -67,7 +69,7 @@ public class ShortestRemainingTime {
 		timer = (int)queue.peek().expectedRunTime;
 		Job jobFinishing;
 		Job jobAdding;
-		do{//loop until 100 quanta
+		while(newQueue.size() != limit){//loop until 100 quanta
 			//
 			if(dummyQ.peek() != null &&(int)dummyQ.peek().arrivalTime + 1 <= timer){
 				jobAdding = dummyQ.poll();
@@ -85,7 +87,7 @@ public class ShortestRemainingTime {
 			}
 
 			timer++;
-		}while(timer  < 100 || jobsWorking.peek() != null);
+		}
 
 		return newQueue;
 

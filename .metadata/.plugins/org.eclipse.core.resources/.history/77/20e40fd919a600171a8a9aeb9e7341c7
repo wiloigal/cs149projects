@@ -49,10 +49,8 @@ public class ShortestRemainingTime {
 
 
 	private Queue<Job> doJobs(PriorityQueue<Job> queue){
-		
 		//new queue length will be this integer when the jobs are all finished
 		int limit = queue.size();
-		
 		//dummy queue because you don't want to change the data of actual queue
 		PriorityQueue<Job> dummyQ = new PriorityQueue<>(queue);
 		
@@ -67,7 +65,7 @@ public class ShortestRemainingTime {
 		timer = (int)queue.peek().expectedRunTime;
 		Job jobFinishing;
 		Job jobAdding;
-		do{//loop until 100 quanta
+		while(newQueue.size() != limit){//loop until 100 quanta
 			//
 			if(dummyQ.peek() != null &&(int)dummyQ.peek().arrivalTime + 1 <= timer){
 				jobAdding = dummyQ.poll();
@@ -85,7 +83,7 @@ public class ShortestRemainingTime {
 			}
 
 			timer++;
-		}while(timer  < 100 || jobsWorking.peek() != null);
+		}
 
 		return newQueue;
 

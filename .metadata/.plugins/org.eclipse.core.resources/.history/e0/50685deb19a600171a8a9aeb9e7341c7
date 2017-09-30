@@ -67,7 +67,7 @@ public class ShortestRemainingTime {
 		timer = (int)queue.peek().expectedRunTime;
 		Job jobFinishing;
 		Job jobAdding;
-		do{//loop until 100 quanta
+		while(!jobsWorking.isEmpty() && timer < 100){//loop until 100 quanta
 			//
 			if(dummyQ.peek() != null &&(int)dummyQ.peek().arrivalTime + 1 <= timer){
 				jobAdding = dummyQ.poll();
@@ -85,7 +85,7 @@ public class ShortestRemainingTime {
 			}
 
 			timer++;
-		}while(timer  < 100 || jobsWorking.peek() != null);
+		}
 
 		return newQueue;
 
