@@ -19,6 +19,7 @@ public class Job {
 		this.name = name;
 		this.timeLeft = expectedRunTime;
 	}
+
 	public static PriorityQueue<Job> JOBS(){
 		PriorityQueue<Job> jobs = new PriorityQueue<>(ShortestRemainingTime.compareByArrivalTime);
 		Random r = new Random();
