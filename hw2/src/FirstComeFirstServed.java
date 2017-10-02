@@ -17,11 +17,11 @@ public class FirstComeFirstServed {
             currentJob = jobs.poll();
 
             //waits for job to arrive
-            while (currentJob.arrivalTime > timer) {
+            while (currentJob.getArrivalTime() > timer) {
                 timer++;
             }
 
-            int runTime = (int) currentJob.expectedRunTime;
+            int runTime = (int) currentJob.getExpectedRunTime();
             timer += runTime;
 
         }
