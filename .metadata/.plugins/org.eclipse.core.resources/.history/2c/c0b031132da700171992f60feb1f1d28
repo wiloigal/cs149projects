@@ -3,59 +3,52 @@ import java.util.*;
 public class ShortestRemainingTime {
 
 	private static final int totalJobs = 30;
-	
-	//Will help to calculate average runtime
+	private PriorityQueue<Job> workingJobs;//sort by runtime
+	private Job jobBeingWorked;
+	//Total amount of time for which a was used for processing
     public float totalResponseTime = 0.0f;
 	int timer = 0;
-	
-	/**
-	 * Method gets called to take the queue of jobs in cpu
-	 * and increment the waiting time of the jobs waiting
-	 * @param q entire jobs seen by cpu that haven't finished
-	 */
+
+	/////////Constructor//////////////////////////////////
+	public ShortestRemainingTime(){                     
+		workingJobs = new PriorityQueue<Job>(Job.compareByRemainingTime);
+	}
+
+
 	private void incrementWaitingJobs(PriorityQueue<Job> q){
 		ArrayList<Job> dummyList = new ArrayList<Job>(q);
 		dummyList.remove(0);
 		for(Job j: dummyList)
 			j.incWaitingTime();
 	}
-	/**
-	 * Meat and Bones
-	 * 
-	 * @param queue jobs sorted by arrival time
-	 * @return queue after scheduling algorithm has ran
-	 */
-	private Queue<Job> processJobs(PriorityQueue<Job> queue){
+	private Queue<Job> doJobs(PriorityQueue<Job> queue){
 		
-		//Create dummy queue. Sorted by arrivalTime
-		//Create empty queue to return
-		//Create empty queue that sorts by remaining time**
+		//dummy queue because you don't want to change the data of actual queue
 		PriorityQueue<Job> dummyQ = new PriorityQueue<>(queue);
+		//queue to return 
 		Queue<Job> newQueue = new LinkedList<Job>();
+		
+		//we already have the queue sorted by arrival time
+		//need a queue sorted by time remaining
 		PriorityQueue<Job> jobsWorking = new PriorityQueue<Job>(Job.compareByRemainingTime);
 		
-		//Sets up the ability to get the average response time
+
+        //Aggregate total response time (used for calculating statistics later)
         for (Job single_job : dummyQ)
+        {
             totalResponseTime += single_job.getExpectedRunTime();
-             
+        }        
+        
 		//timer goes to the time the first job is seen
 		timer = (int)queue.peek().getArrivalTime();
-		
-		//simplification
 		Job jobFinishing;
 		Job jobAdding;
-		
-		//loops while timer is under 100 quanta or if a job
-		//entered cpu and hasn't finished
-		//if there are any jobs seen by the cpu, process it 
-		//and increment the waiting time on any other jobs 
-		//if the job is complete, set the endtime and move 
-		//the job from dummyQ to the queue to return
-		
-		//if dummyQ has another element and the new element has
-		//been seen by cpu
-		//remove from dummyQ add to working jobs and set start time
 		while(timer  < 100 || jobsWorking.peek() != null){
+			if(dummyQ.peek() != null && (int)dummyQ.peek().getArrivalTime() <= timer){
+				jobAdding = dummyQ.poll();
+				jobAdding.setStartTime(timer);
+				jobsWorking.add(jobAdding);
+			}
 			if(jobsWorking.size() != 0){
 				incrementWaitingJobs(jobsWorking);
 				jobsWorking.peek().doJob();
@@ -67,14 +60,10 @@ public class ShortestRemainingTime {
 					newQueue.add(jobFinishing);
 				}
 			}
-			if(dummyQ.peek() != null && (int)dummyQ.peek().getArrivalTime() <= timer){
-				jobAdding = dummyQ.poll();
-				jobAdding.setStartTime(timer);
-				jobsWorking.add(jobAdding);
-			}
 			timer++;
 		};
-		
+		//loop timer is under or if a job entered cpu
+
 		return newQueue;
 
 	}
@@ -84,21 +73,21 @@ public class ShortestRemainingTime {
 		some_job_list.sort(Job.compareByArrivalTime);
         System.out.println("-----------------------------------------------------------------------------");
 
-        System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s\n",
+        System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s%-15s%-15s\n",
                 "Job Name", "Arrival", "Priority", "Response Time", "Waiting Time", "Turn Around Time");
 
         for (Job job : some_job_list)
         {
-            System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s%-15s%-15s\n",
+            System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s\n",
                     job.getName(),
                     job.getArrivalTime(),
                     job.getPriority(),
                     job.getExpectedRunTime(),
                     job.getWaitingTime(),
                     job.getTurnAroundTime(),
-                    job.getStartTime(),
-                    job.getEndTime()
-                    );
+            		job.getArrivalTime(),
+            		job.getEndTime()
+            );
         }
 
         System.out.println("-----------------------------------------------------------------------------");
@@ -148,7 +137,7 @@ public class ShortestRemainingTime {
 
 		ShortestRemainingTime str = new ShortestRemainingTime();
 		
-		Queue<Job> q = str.processJobs(arg);
+		Queue<Job> q = str.doJobs(arg);
 		printJobData(q);
 		printAggregatedStatistics(q, str.totalResponseTime);
 		

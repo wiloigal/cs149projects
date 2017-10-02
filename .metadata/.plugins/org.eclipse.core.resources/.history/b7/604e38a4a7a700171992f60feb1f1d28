@@ -5,6 +5,7 @@ import java.util.Random;
 
 /**
  * This class contains all the information for a job and algorithm statistics
+ * @author josh
  *
  */
 public class Job{

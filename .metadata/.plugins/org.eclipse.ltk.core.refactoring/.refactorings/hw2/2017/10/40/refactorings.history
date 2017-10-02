@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;ShortestRemainingTime.doJobs(...)&apos; to &apos;processJobs&apos;&#x0A;- Original project: &apos;hw2&apos;&#x0A;- Original element: &apos;ShortestRemainingTime.doJobs(...)&apos;&#x0A;- Renamed element: &apos;ShortestRemainingTime.processJobs(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;doJobs&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{ShortestRemainingTime.java[ShortestRemainingTime~doJobs~QPriorityQueue\&lt;QJob;&gt;;" name="processJobs" references="true" stamp="1506922602956" version="1.0"/>
+</session>

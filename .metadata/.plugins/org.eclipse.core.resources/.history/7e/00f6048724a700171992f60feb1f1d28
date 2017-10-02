@@ -3,10 +3,6 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Random;
 
-/**
- * This class contains all the information for a job and algorithm statistics
- *
- */
 public class Job{
 	private final float arrivalTime;
 	private float expectedRunTime;
@@ -23,13 +19,6 @@ public class Job{
 	public static final float expected_total_runtime_min = 0.1f;
     public static final float expected_total_runtime_max = 10.0f;
     
-    /**
-     * Constructor
-     * @param arrivalTime time job enters cpu
-     * @param expectedRunTime
-     * @param priority
-     * @param name job name
-     */
 	public Job(float arrivalTime, float expectedRunTime, int priority, String name){
 		this.arrivalTime = arrivalTime;
 		this.expectedRunTime = expectedRunTime;
@@ -68,10 +57,7 @@ public class Job{
 		}
 
 	};
-	/**
-	 * Randomly generate 30 jobs
-	 * @return priority queue of 30 jobs
-	 */
+
 	public static PriorityQueue<Job> JOBS(){
 		PriorityQueue<Job> jobs = new PriorityQueue<>(compareByArrivalTime);
 		Random r = new Random();
@@ -89,144 +75,118 @@ public class Job{
 			single_job.setTimeLeft(single_job.getExpectedRunTime());
 
 		}
-		return jobs;	
+	
+		return jobs;
+		
 	}
-	/**
-	 * sets the turnaround time for the job
-	 * @param f the amount to set the turnaround time
-	 */
+	
+	
+	/*
+	public static ArrayList<Job> JOBS(){
+		ArrayList<Job> jobPriorityList = new ArrayList<>();
+        int[] arrivalArray = new int[100];
+
+        //quanta min and max
+        for (int i = 0; i < 99; i++)
+        {
+            arrivalArray[i] = i + 1;
+        }
+
+        int i = 0;
+        while (i < 30)//total jobs
+        {
+            Random randObject = new Random();
+
+            //Returns the name of job from 0 to 99
+            int jobNum = randObject.nextInt(100);
+
+            //Returns 0 to 3 then +1 to fit priority needs of 1 - 4
+            int priorityNum = randObject.nextInt(4) + 1;
+
+            if (arrivalArray[jobNum] != -1)
+            {
+                Job single_job = new Job();
+
+                single_job.setJobName(Integer.toString(i));
+                single_job.setStartTime(arrivalArray[jobNum]);
+                single_job.setPriority(priorityNum);
+                single_job.setResponseTime(randObject.nextFloat()
+                                * (expected_total_runtime_max - expected_total_runtime_min)
+                                + expected_total_runtime_min);
+
+                jobPriorityList.add(single_job);
+                arrivalArray[jobNum] = -1;
+                
+                jobPriorityList.get(i).setTurnAroundTime(jobPriorityList.get(i).getResponseTime());
+                i++;
+            }
+        }
+
+        return jobPriorityList;
+
+	}*/
+
 	public void setTurnAroundTime(float f){
 		turnaroundTime = f;
 	}
-	/**
-	 * Sets the priority of the job
-	 * @param priorityNum priority to set
-	 */
 	private void setPriority(int priorityNum) {
 		// TODO Auto-generated method stub
 		priority = priorityNum;
 		
 	}
-	/**
-	 * Sets the job name
-	 * @param string name to set
-	 */
 	private void setJobName(String string) {
 		// TODO Auto-generated method stub
 		name = string;
 		
 	}
-	/**
-	 * Subtracts one quanta from the jobs remaining time
-	 */
 	public void doJob(){
 		timeLeft -= 1;
 
 	}
-	/**
-	 * Job is complete or not
-	 * @return if job still has time left to complete
-	 */
 	public boolean isComplete(){
 		return timeLeft < 0;
 	}
-	/**
-	 * The time left in job
-	 * @return time left to complete
-	 */
 	public float getTimeLeft(){
 		return timeLeft;
 	}
-	/**
-	 * Amount of quanta to complete job
-	 * @return the initial run time
-	 */
 	public float getExpectedRunTime(){
 		return expectedRunTime;
 	}
-	/**
-	 * The time this job enterred the cpu
-	 * @return the start time
-	 */
 	public int getStartTime(){
 		return startTime;
 	}
-	/**
-	 * The end time of this job
-	 * @return the end time
-	 */
 	public int getEndTime(){
 		return endTime;
 	}
-	/**
-	 * sets the start time of this job
-	 * @param time to set as start
-	 */
 	public void setStartTime(int time){
 		startTime = time;
 	}
-	/**
-	 * sets the end time of this job
-	 * @param time to time to set as the end
-	 */
 	public void setEndTime(int time){
 		endTime = time;
 	}
-	/**
-	 * the name of this job
-	 * @return the name
-	 */
 	public String getName(){
 		return name;
 	}
-	/**
-	 * arrival time of this job
-	 * @return the time
-	 */
 	public float getArrivalTime(){
 		return arrivalTime;
 	}
-	/**
-	 * priority number of this job
-	 * @return the priority number
-	 */
 	public int getPriority(){
 		return priority;
 	}
-	/**
-	 * Waiting time of this job
-	 * @return the total waiting time
-	 */
 	public float getWaitingTime(){
 		return waitingTime;
 	}
-	/**
-	 * Turn around time of this job
-	 * @return the turnaround time
-	 */
 	public float getTurnAroundTime(){
 		return turnaroundTime;
 	}
-	/**
-	 * Set the expected runtime of this job
-	 * @param f time to set 
-	 */
+	public void incWaitingTime(){
+		waitingTime +=1;
+	}
 	public void setExpectedRunTime(float f){
 		expectedRunTime = f;
 	}
-	/**
-	 * Sets the time left in this job
-	 * @param f time to set
-	 */
 	public void setTimeLeft(Float f){
 		timeLeft = f;
-	}
-	
-	/**
-	 * add a quanta to this jobs wating time
-	 */
-	public void incWaitingTime(){
-		waitingTime +=1;
 	}
 	
 }
