@@ -1,0 +1,145 @@
+import java.util.*;
+
+public class ShortestRemainingTime {
+
+	private static final int totalJobs = 30;
+	private PriorityQueue<Job> workingJobs;//sort by runtime
+	private Job jobBeingWorked;
+	//Total amount of time for which a was used for processing
+    public float totalResponseTime = 0.0f;
+	int timer = 0;
+
+	/////////Constructor//////////////////////////////////
+	public ShortestRemainingTime(){                     
+		workingJobs = new PriorityQueue<Job>(Job.compareByRemainingTime);
+	}
+
+
+	private void incrementWaitingJobs(PriorityQueue<Job> q){
+		ArrayList<Job> dummyList = new ArrayList<Job>(q);
+		dummyList.remove(0);
+		for(Job j: dummyList)
+			j.incWaitingTime();
+	}
+	private Queue<Job> doJobs(PriorityQueue<Job> queue){
+		
+		//dummy queue because you don't want to change the data of actual queue
+		PriorityQueue<Job> dummyQ = new PriorityQueue<>(queue);
+		
+		//queue to return 
+		Queue<Job> newQueue = new LinkedList<Job>();
+		
+		//we already have the queue sorted by arrival time
+		//need a queue sorted by time remaining
+		PriorityQueue<Job> jobsWorking = new PriorityQueue<Job>(Job.compareByRemainingTime);
+		
+
+        //Aggregate total response time (used for calculating statistics later)
+        for (Job single_job : dummyQ)
+        {
+            totalResponseTime += single_job.getResponseTime();
+        }        
+        
+		//timer goes to the time the first job is seen
+		timer = (int)queue.peek().getExpectedRunTime();
+		Job jobFinishing;
+		Job jobAdding;
+		do{
+			//
+			if(dummyQ.peek() != null && (int)dummyQ.peek().getArrivalTime() + 1 <= timer){
+				jobAdding = dummyQ.poll();
+				jobAdding.setStartTime(timer);
+				jobsWorking.add(jobAdding);
+			}
+			if(jobsWorking.size() != 0){
+				incrementWaitingJobs(jobsWorking);
+				jobsWorking.peek().doJob();
+				if(jobsWorking.peek().isComplete()){
+					
+					jobFinishing = jobsWorking.poll();
+					System.out.println("Job : " + jobFinishing.getName() + " completing");
+					jobFinishing.setEndTime(timer);
+					jobFinishing.setTurnAroundTime(jobFinishing.getTurnAroundTime() + jobFinishing.getWaitingTime());
+					dummyQ.remove(jobFinishing);
+					newQueue.add(jobFinishing);
+				}
+			}
+
+			timer++;
+		}while(timer  < 100 || jobsWorking.peek() != null);
+		//loop timer is under or if a job entered cpu
+
+		return newQueue;
+
+	}
+	public static void printJobData(Queue<Job> some_job_list)
+    {
+        System.out.println("-----------------------------------------------------------------------------");
+
+        System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s\n",
+                "Job Name", "Arrival", "Priority", "Response Time", "Waiting Time", "Turn Around Time");
+
+        for (Job job : some_job_list)
+        {
+            System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s%-15s%-15s\n",
+                    job.getName(),
+                    job.getArrivalTime(),
+                    job.getPriority(),
+                    job.getResponseTime(),
+                    job.getWaitingTime(),
+                    job.getTurnAroundTime(),
+                    job.getStartTime(),
+            		job.getEndTime());
+        }
+
+        System.out.println("-----------------------------------------------------------------------------");
+    }
+
+    public static void printAggregatedStatistics(Queue<Job> completedJobs, float totalResponseTime)
+    {
+        float avgWait;
+        float avgTurnAround;
+        float avgResponse;
+
+        float totalWait = 0.0f;
+        float totalTurnAround = 0.0f;
+
+        for (Job j : completedJobs)
+        {
+            totalWait += j.getWaitingTime();
+            totalTurnAround += j.getTurnAroundTime();
+        }
+
+        //amount of time a process has been waiting in the ready queue
+        avgWait = totalWait / totalJobs;
+
+        // amount of time to execute a particular process
+        avgTurnAround = totalTurnAround / totalJobs;
+
+        //amount of time from when a request was submitted until the first response is produced
+        avgResponse = totalResponseTime / totalJobs;
+
+        System.out.println("Total Jobs Completed: " + completedJobs.size());
+        System.out.println("Average Wait Time: " + avgWait);
+        System.out.println("Average Turn Around: " + avgTurnAround);
+        System.out.println("Average Response Time: "+ avgResponse);
+
+        System.out.println("-----------------------------------------------------------------------------");
+    }
+
+	public static void main(String[] args){
+		Random r = new Random();
+		PriorityQueue<Job> arg = Job.JOBS();
+		
+		printJobData((Queue)arg);
+		ShortestRemainingTime str = new ShortestRemainingTime();
+		
+		Queue<Job> q = str.doJobs(arg);
+		printJobData(q);
+		printAggregatedStatistics(q, str.totalResponseTime);
+		
+		
+		
+	}
+
+}
