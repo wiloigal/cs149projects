@@ -134,6 +134,11 @@ public class HighestPriorityFirstPreemptive
         }
     }
 
+    /**
+     * This function will print table of MyJob objects from given list
+     * in a nice tabular from with even distributed spacing.
+     * @param some_job_list: list of MyJob objects
+     */
     public static void printJobData(ArrayList<MyJob> some_job_list)
     {
         System.out.println("-----------------------------------------------------------------------------");
@@ -155,29 +160,32 @@ public class HighestPriorityFirstPreemptive
         System.out.println("-----------------------------------------------------------------------------");
     }
 
+    /**
+     * This function is used to calculate the average aggregated statistics
+     * for the average wait time, average turn around time, and response time.
+     * @param completedJobs: list of completed MYJob objects.
+     * @param totalResponseTime: the total response times.
+     */
     public static void printAggregatedStatistics(ArrayList<MyJob> completedJobs, float totalResponseTime)
     {
-        float avgWait;
-        float avgTurnAround;
-        float avgResponse;
-
         float totalWait = 0.0f;
         float totalTurnAround = 0.0f;
 
+        //Aggregate the total wait time and total turn around time for all completed job chucks
         for (MyJob j : completedJobs)
         {
             totalWait += j.getWaitingTime();
             totalTurnAround += j.getTurnAroundTime();
         }
 
-        //amount of time a process has been waiting in the ready queue
-        avgWait = totalWait / totalJobs;
+        //average time a process has been waiting in the job queue
+        float avgWait = totalWait / totalJobs;
 
-        // amount of time to execute a particular process
-        avgTurnAround = totalTurnAround / totalJobs;
+        //average time to execute a particular process
+        float avgTurnAround = totalTurnAround / totalJobs;
 
-        //amount of time from when a request was submitted until the first response is produced
-        avgResponse = totalResponseTime / totalJobs;
+        //average time from when a request was submitted
+        float avgResponse = totalResponseTime / totalJobs;
 
         System.out.println("Total Jobs Completed: " + completedJobs.size());
         System.out.println("Average Wait Time: " + avgWait);
@@ -187,11 +195,20 @@ public class HighestPriorityFirstPreemptive
         System.out.println("-----------------------------------------------------------------------------");
     }
 
+    /**
+     * This function will return a list of pseudo-random job processes
+     * that will be used in scheduling.
+     *
+     * @return: list of pseudo-random job processes.
+     */
     public static ArrayList<MyJob> createListOfJobs()
     {
-        ArrayList<MyJob> jobPriorityList = new ArrayList<>();
-        int[] arrivalArray = new int[100];
 
+        ArrayList<MyJob> randomJobList = new ArrayList<>(); // list of jobs
+        int[] arrivalArray = new int[arrival_time_quanta_max]; // to ensure that no 2 jobs will have the same arrival time.
+
+        //populate a temp list of possible arrival times
+        // (used for ensuring that no 2 jobs will share the same arrival time)
         for (int i = arrival_time_quanta_min; i < arrival_time_quanta_max; i++)
         {
             arrivalArray[i] = i + 1;
@@ -202,12 +219,13 @@ public class HighestPriorityFirstPreemptive
         {
             Random randObject = new Random();
 
-            //Returns the name of job from 0 to 99
-            int jobNum = randObject.nextInt(100);
+            //Returns the arrival time of job from 0 to 99 (Random)
+            int jobNum = randObject.nextInt(arrival_time_quanta_max);
 
-            //Returns 0 to 3 then +1 to fit priority needs of 1 - 4
+            //Returns 0 to 3 then +1 to fit priority needs of 1 - 4 (Random)
             int priorityNum = randObject.nextInt(4) + 1;
 
+            // (used for ensuring that no 2 jobs will share the same arrival time)
             if (arrivalArray[jobNum] != -1)
             {
                 MyJob single_job = new MyJob();
@@ -219,18 +237,21 @@ public class HighestPriorityFirstPreemptive
                                 * (expected_total_runtime_max - expected_total_runtime_min)
                                 + expected_total_runtime_min);
 
-                jobPriorityList.add(single_job);
-                arrivalArray[jobNum] = -1;
-                jobPriorityList.get(i).setTurnAroundTime(jobPriorityList.get(i).getResponseTime());
+                randomJobList.add(single_job);
+                arrivalArray[jobNum] = -1; // (used for ensuring that no 2 jobs will share the same arrival time)
+                randomJobList.get(i).setTurnAroundTime(randomJobList.get(i).getResponseTime());
                 i++;
             }
         }
 
-        return jobPriorityList;
+        return randomJobList;
     }
 
 }//End Class
 
+/**
+ * This class will represent a generic Job object
+ */
 class MyJob
 {
 
@@ -256,10 +277,10 @@ class MyJob
     /**
      * Constructor
      *
-     * @param jobName
-     * @param arrivalTime
-     * @param responseTime
-     * @param priority
+     * @param jobName: name of job
+     * @param arrivalTime: the arrival time
+     * @param responseTime: amount of time for which a was used for processing instructions
+     * @param priority: can only be 1 to 4
      */
     public MyJob(String jobName, int arrivalTime, float responseTime, int priority)
     {
@@ -269,61 +290,109 @@ class MyJob
         this.priority = priority;
     }
 
+    /**
+     * Accessor: jobName: name of job
+     */
     public String getJobName()
     {
         return this.jobName;
     }
 
+    /**
+     * Accessor: arrivalTime: the arrival time
+     */
     public int getArrivalTime()
     {
         return this.arrivalTime;
     }
 
+    /**
+     * Accessor: responseTime: amount of time for which a was used for processing instructions
+     */
     public float getResponseTime()
     {
         return this.responseTime;
     }
 
+    /**
+     * Accessor: priority: can only be 1 to 4
+     */
     public int getPriority()
     {
         return this.priority;
     }
 
+    /**
+     * Accessor: waitingTime: amount of time a process has been waiting in the queue
+     */
     public float getWaitingTime()
     {
         return this.waitingTime;
     }
 
+    /**
+     * Accessor: turnAroundTime: amount of time to execute a particular process
+     */
     public float getTurnAroundTime()
     {
         return this.turnAroundTime;
     }
 
+    /**
+     * Mutator: jobName
+     *
+     * @param jobName: name of job
+     */
     public void setJobName(String jobName)
     {
         this.jobName = jobName;
     }
 
+    /**
+     * Mutator: arrivalTime
+     *
+     * @param arrivalTime: the arrival time
+     */
     public void setArrivalTime(int arrivalTime)
     {
         this.arrivalTime = arrivalTime;
     }
 
+    /**
+     * Mutator: responseTime
+     *
+     * @param responseTime: amount of time for which a was used for processing instructions
+     */
     public void setResponseTime(float responseTime)
     {
         this.responseTime = responseTime;
     }
 
+    /**
+     * Mutator: priority
+     *
+     * @param priority: can only be 1 to 4
+     */
     public void setPriority(int priority)
     {
         this.priority = priority;
     }
 
+    /**
+     * Mutator: waitingTime
+     *
+     * @param waitingTime: amount of time a process has been waiting in the queue
+     */
     public void setWaitingTime(float waitingTime)
     {
         this.waitingTime = waitingTime;
     }
 
+    /**
+     * Mutator: turnAroundTime
+     *
+     * @param turnAroundTime: amount of time to execute a particular process
+     */
     public void setTurnAroundTime(float turnAroundTime)
     {
         this.turnAroundTime = turnAroundTime;
@@ -331,6 +400,9 @@ class MyJob
 
 }//End Class
 
+/**
+ * This class is used for comparing between MyJob objects by arrival time.
+ */
 class SortByArrival implements Comparator<MyJob>
 {
     @Override
