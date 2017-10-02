@@ -1,0 +1,69 @@
+import java.util.*;
+
+public class ShortestRemainingTime {
+
+	private PriorityQueue<Job> workingJobs;//sort by runtime
+	private Job jobBeingWorked;
+	int timer = 0;
+
+	/////////Constructor//////////////////////////////////
+	public ShortestRemainingTime(){                     
+		workingJobs = new PriorityQueue<Job>(Job.compareByRemainingTime);
+	}
+
+
+
+	private Queue<Job> doJobs(PriorityQueue<Job> queue){
+		
+		//dummy queue because you don't want to change the data of actual queue
+		PriorityQueue<Job> dummyQ = new PriorityQueue<>(queue);
+		
+		//queue to return 
+		Queue<Job> newQueue = new LinkedList<Job>();
+		
+		//we already have the queue sorted by arrival time
+		//need a queue sorted by time remaining
+		PriorityQueue<Job> jobsWorking = new PriorityQueue<Job>(Job.compareByRemainingTime);
+
+		//timer goes to the time the first job is seen
+		timer = (int)queue.peek().expectedRunTime;
+		Job jobFinishing;
+		Job jobAdding;
+		do{
+			//
+			if(dummyQ.peek() != null && (int)dummyQ.peek().arrivalTime + 1 <= timer){
+				jobAdding = dummyQ.poll();
+				jobAdding.setStartTime(timer);
+				jobsWorking.add(jobAdding);
+			}
+			if(jobsWorking.size() != 0){
+				jobsWorking.peek().doJob();
+				if(jobsWorking.peek().isComplete()){
+					jobFinishing = jobsWorking.poll();
+					jobFinishing.setEndTime(timer);
+					dummyQ.remove(jobFinishing);
+					newQueue.add(jobFinishing);
+				}
+			}
+
+			timer++;
+		}while(timer  < 100 || jobsWorking.peek() != null);
+		//loop timer is under or if a job entered cpu
+
+		return newQueue;
+
+	}
+
+	public static void main(String[] args){
+		Random r = new Random();
+		PriorityQueue<Job> arg = Job.JOBS();
+		//arg.sort(Job.compareByArrivalTime);
+		for(Job j: arg){
+			System.out.print(j.arrivalTime + "  ");
+		}
+		ShortestRemainingTime str = new ShortestRemainingTime();
+		
+		//Queue<Job> q = str.doJobs(arg);
+	}
+
+}
