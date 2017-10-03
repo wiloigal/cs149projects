@@ -156,3 +156,149 @@ public class FirstComeFirstServed {
 
     }
 }
+
+
+    class Job {
+    private String jobName; // name of job
+    private int arrivalTime; // arrival instance
+    private float responseTime; // amount of time for which a was used for processing instructions
+    private int priority; // can only be 1 to 4
+
+    private float waitingTime; // amount of time a process has been waiting in the queue
+    private float turnAroundTime; // amount of time to execute a particular process
+
+    /**
+     * Default Constructor
+     */
+    public Job()
+    {
+        this.jobName = "DEFAULT";
+        this.arrivalTime = -1;
+        this.responseTime = -1;
+        this.priority = -1;
+    }
+
+    /**
+     * Constructor
+     *
+     * @param jobName: name of job
+     * @param arrivalTime: the arrival time
+     * @param responseTime: amount of time for which a was used for processing instructions
+     * @param priority: can only be 1 to 4
+     */
+    public Job(String jobName, int arrivalTime, float responseTime, int priority)
+    {
+        this.jobName = jobName;
+        this.arrivalTime = arrivalTime;
+        this.responseTime = responseTime;
+        this.priority = priority;
+    }
+
+    /**
+     * Accessor: jobName: name of job
+     */
+    public String getJobName()
+    {
+        return this.jobName;
+    }
+
+    /**
+     * Accessor: arrivalTime: the arrival time
+     */
+    public int getArrivalTime()
+    {
+        return this.arrivalTime;
+    }
+
+    /**
+     * Accessor: responseTime: amount of time for which a was used for processing instructions
+     */
+    public float getResponseTime()
+    {
+        return this.responseTime;
+    }
+
+    /**
+     * Accessor: priority: can only be 1 to 4
+     */
+    public int getPriority()
+    {
+        return this.priority;
+    }
+
+    /**
+     * Accessor: waitingTime: amount of time a process has been waiting in the queue
+     */
+    public float getWaitingTime()
+    {
+        return this.waitingTime;
+    }
+
+    /**
+     * Accessor: turnAroundTime: amount of time to execute a particular process
+     */
+    public float getTurnAroundTime()
+    {
+        return this.turnAroundTime;
+    }
+
+    /**
+     * Mutator: jobName
+     *
+     * @param jobName: name of job
+     */
+    public void setJobName(String jobName)
+    {
+        this.jobName = jobName;
+    }
+
+    /**
+     * Mutator: arrivalTime
+     *
+     * @param arrivalTime: the arrival time
+     */
+    public void setArrivalTime(int arrivalTime)
+    {
+        this.arrivalTime = arrivalTime;
+    }
+
+    /**
+     * Mutator: responseTime
+     *
+     * @param responseTime: amount of time for which a was used for processing instructions
+     */
+    public void setResponseTime(float responseTime)
+    {
+        this.responseTime = responseTime;
+    }
+
+    /**
+     * Mutator: priority
+     *
+     * @param priority: can only be 1 to 4
+     */
+    public void setPriority(int priority)
+    {
+        this.priority = priority;
+    }
+
+    /**
+     * Mutator: waitingTime
+     *
+     * @param waitingTime: amount of time a process has been waiting in the queue
+     */
+    public void setWaitingTime(float waitingTime)
+    {
+        this.waitingTime = waitingTime;
+    }
+
+    /**
+     * Mutator: turnAroundTime
+     *
+     * @param turnAroundTime: amount of time to execute a particular process
+     */
+    public void setTurnAroundTime(float turnAroundTime)
+    {
+        this.turnAroundTime = turnAroundTime;
+    }
+}
