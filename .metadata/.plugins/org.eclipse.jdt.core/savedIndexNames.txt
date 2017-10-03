@@ -5,7 +5,6 @@ INDEX VERSION 1.129+/Users/josh/Documents/fall2017/CS149/cs149projects/.metadata
 2465022724.index
 1271342938.index
 2979435446.index
-930628701.index
 3157663476.index
 3358580009.index
 576073405.index

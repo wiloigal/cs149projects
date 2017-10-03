@@ -13,10 +13,10 @@ public class ShortestRemainingTime {
 	 * and increment the waiting time of the jobs waiting
 	 * @param q entire jobs seen by cpu that haven't finished
 	 */
-	private void incrementWaitingJobs(PriorityQueue<JoshJob> q){
-		ArrayList<JoshJob> dummyList = new ArrayList<JoshJob>(q);
+	private void incrementWaitingJobs(PriorityQueue<Job> q){
+		ArrayList<Job> dummyList = new ArrayList<Job>(q);
 		dummyList.remove(0);
-		for(JoshJob j: dummyList)
+		for(Job j: dummyList)
 			j.incWaitingTime();
 	}
 	/**
@@ -25,25 +25,25 @@ public class ShortestRemainingTime {
 	 * @param queue jobs sorted by arrival time
 	 * @return queue after scheduling algorithm has ran
 	 */
-	private Queue<JoshJob> processJobs(PriorityQueue<JoshJob> queue){
+	private Queue<Job> processJobs(PriorityQueue<Job> queue){
 		
 		//Create dummy queue. Sorted by arrivalTime
 		//Create empty queue to return
 		//Create empty queue that sorts by remaining time**
-		PriorityQueue<JoshJob> dummyQ = new PriorityQueue<>(queue);
-		Queue<JoshJob> newQueue = new LinkedList<JoshJob>();
-		PriorityQueue<JoshJob> jobsWorking = new PriorityQueue<JoshJob>(JoshJob.compareByRemainingTime);
+		PriorityQueue<Job> dummyQ = new PriorityQueue<>(queue);
+		Queue<Job> newQueue = new LinkedList<Job>();
+		PriorityQueue<Job> jobsWorking = new PriorityQueue<Job>(Job.compareByRemainingTime);
 		
 		//Sets up the ability to get the average response time
-        for (JoshJob single_job : dummyQ)
+        for (Job single_job : dummyQ)
             totalResponseTime += single_job.getExpectedRunTime();
              
 		//timer goes to the time the first job is seen
 		timer = (int)queue.peek().getArrivalTime();
 		
 		//simplification
-		JoshJob jobFinishing;
-		JoshJob jobAdding;
+		Job jobFinishing;
+		Job jobAdding;
 		
 		//loops while timer is under 100 quanta or if a job
 		//entered cpu and hasn't finished
@@ -78,16 +78,16 @@ public class ShortestRemainingTime {
 		return newQueue;
 
 	}
-	public static void printJobData(Queue<JoshJob> list)
+	public static void printJobData(Queue<Job> list)
     {
-		ArrayList<JoshJob> some_job_list = new ArrayList<JoshJob>(list);
-		some_job_list.sort(JoshJob.compareByArrivalTime);
+		ArrayList<Job> some_job_list = new ArrayList<Job>(list);
+		some_job_list.sort(Job.compareByArrivalTime);
         System.out.println("-----------------------------------------------------------------------------");
 
         System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s\n",
                 "Job Name", "Arrival", "Priority", "Response Time", "Waiting Time", "Turn Around Time");
 
-        for (JoshJob job : some_job_list)
+        for (Job job : some_job_list)
         {
             System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s\n",
                     job.getName(),
@@ -102,7 +102,7 @@ public class ShortestRemainingTime {
         System.out.println("-----------------------------------------------------------------------------");
     }
 
-    public static void printAggregatedStatistics(Queue<JoshJob> completedJobs, float totalResponseTime)
+    public static void printAggregatedStatistics(Queue<Job> completedJobs, float totalResponseTime)
     {
         float avgWait;
         float avgTurnAround;
@@ -111,7 +111,7 @@ public class ShortestRemainingTime {
         float totalWait = 0.0f;
         float totalTurnAround = 0.0f;
 
-        for (JoshJob j : completedJobs)
+        for (Job j : completedJobs)
         {
             totalWait += j.getWaitingTime();
             totalTurnAround += j.getTurnAroundTime();
@@ -136,7 +136,7 @@ public class ShortestRemainingTime {
 
 	public static void main(String[] args){
 		
-		PriorityQueue<JoshJob> arg = JoshJob.JOBS();
+		PriorityQueue<Job> arg = Job.JOBS();
 		System.out.println("--------------SHORTEST TIME REMAINING--------------");
 		System.out.println("QUEUE OF JOBS BEFORE EXECUTING SCHEDULING ALGORITHM: (SORTED BY ARRIVAL)");
 
@@ -146,7 +146,7 @@ public class ShortestRemainingTime {
 
 		ShortestRemainingTime str = new ShortestRemainingTime();
 		
-		Queue<JoshJob> q = str.processJobs(arg);
+		Queue<Job> q = str.processJobs(arg);
 		printJobData(q);
 		printAggregatedStatistics(q, str.totalResponseTime);
 		
@@ -159,7 +159,7 @@ public class ShortestRemainingTime {
  * This class contains all the information for a job and algorithm statistics
  *
  */
-class JoshJob{
+class Job{
 	private final float arrivalTime;
 	private float expectedRunTime;
 	private int priority;
@@ -182,7 +182,7 @@ class JoshJob{
      * @param priority
      * @param name job name
      */
-	public JoshJob(float arrivalTime, float expectedRunTime, int priority, String name){
+	public Job(float arrivalTime, float expectedRunTime, int priority, String name){
 		this.arrivalTime = arrivalTime;
 		this.expectedRunTime = expectedRunTime;
 		this.priority = priority;
@@ -190,9 +190,9 @@ class JoshJob{
 		this.timeLeft = expectedRunTime;
 	}
 
-	public static Comparator<JoshJob> compareByArrivalTime = new Comparator<JoshJob>(){
+	public static Comparator<Job> compareByArrivalTime = new Comparator<Job>(){
 		@Override
-		public int compare(JoshJob o1, JoshJob o2) {
+		public int compare(Job o1, Job o2) {
 			// TODO Auto-generated method stub
 
 			float oneComparison = o1.arrivalTime;
@@ -205,9 +205,9 @@ class JoshJob{
 			return 0;
 		}
 	};
-	public static Comparator<JoshJob> compareByRemainingTime = new Comparator<JoshJob>(){
+	public static Comparator<Job> compareByRemainingTime = new Comparator<Job>(){
 		@Override
-		public int compare(JoshJob o1, JoshJob o2) {
+		public int compare(Job o1, Job o2) {
 			// TODO Auto-generated method stub
 			float oneComparison = o1.getTimeLeft();
 			float twoComparison = o2.getTimeLeft();
@@ -224,12 +224,12 @@ class JoshJob{
 	 * Randomly generate 30 jobs
 	 * @return priority queue of 30 jobs
 	 */
-	public static PriorityQueue<JoshJob> JOBS(){
-		PriorityQueue<JoshJob> jobs = new PriorityQueue<>(compareByArrivalTime);
+	public static PriorityQueue<Job> JOBS(){
+		PriorityQueue<Job> jobs = new PriorityQueue<>(compareByArrivalTime);
 		Random r = new Random();
 		
 		for(int i = 0 ; i < 30; i++){
-			JoshJob single_job = new JoshJob(0 + r.nextFloat()*(100 - 0),
+			Job single_job = new Job(0 + r.nextFloat()*(100 - 0),
 					         0 + r.nextFloat()*(10-0), 
 					         r.nextInt((4 - 1) + 1) +1, 
 					         Integer.toString(i));

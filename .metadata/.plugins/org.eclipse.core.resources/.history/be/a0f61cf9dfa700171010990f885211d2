@@ -158,7 +158,7 @@ public class FirstComeFirstServed {
 }
 
 
-class Job {
+    class Job {
     private String jobName; // name of job
     private int arrivalTime; // arrival instance
     private float responseTime; // amount of time for which a was used for processing instructions
