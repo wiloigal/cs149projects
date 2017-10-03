@@ -179,13 +179,13 @@ public class HighestPriorityFirstPreemptive
         }
 
         //average time a process has been waiting in the job queue
-        float avgWait = totalWait / totalJobs;
+        float avgWait = totalWait / completedJobs.size();
 
         //average time to execute a particular process
-        float avgTurnAround = totalTurnAround / totalJobs;
+        float avgTurnAround = totalTurnAround / completedJobs.size();
 
         //average time from when a request was submitted
-        float avgResponse = totalResponseTime / totalJobs;
+        float avgResponse = totalResponseTime / completedJobs.size();
 
         System.out.println("Total Jobs Completed: " + completedJobs.size());
         System.out.println("Average Wait Time: " + avgWait);

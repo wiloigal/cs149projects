@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class FirstComeFirstServed {
 
-    private ArrayList<Job> jobs;
-    private static ArrayList<Job> completedJobs;
+    private ArrayList<SamJob> jobs;
+    private static ArrayList<SamJob> completedJobs;
 
     public static final float expected_total_runtime_min = 0.1f;
     public static final float expected_total_runtime_max = 10.0f;
@@ -24,7 +24,7 @@ public class FirstComeFirstServed {
         timer = 0;
     }
 
-    public static void FCFS(ArrayList<Job> jobs) {
+    public static void FCFS(ArrayList<SamJob> jobs) {
         timer = jobs.get(0).getArrivalTime();
         jobs.get(0).setWaitingTime(0);
         for (int i = 0; i < jobs.size(); i++) {
@@ -45,21 +45,21 @@ public class FirstComeFirstServed {
         test.FCFS(test.jobs);
 
         float totalResponseTime = 0.0f;
-        for (Job j : test.jobs) {
+        for (SamJob j : test.jobs) {
             totalResponseTime += j.getResponseTime();
         }
         printJobData(completedJobs);
         printAggregatedStatistics(completedJobs, totalResponseTime);
     }
 
-    public static void printJobData(ArrayList<Job> some_job_list)
+    public static void printJobData(ArrayList<SamJob> some_job_list)
     {
         System.out.println("-----------------------------------------------------------------------------");
 
         System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s\n",
                 "Job Name", "Arrival", "Priority", "Response Time", "Waiting Time", "Turn Around Time");
 
-        for (Job job : some_job_list)
+        for (SamJob job : some_job_list)
         {
             System.out.printf("%-15s%-15s%-15s%-15s%-15s%-15s\n",
                     job.getJobName(),
@@ -73,13 +73,13 @@ public class FirstComeFirstServed {
         System.out.println("-----------------------------------------------------------------------------");
     }
 
-    public static void printAggregatedStatistics(ArrayList<Job> completedJobs, float totalResponseTime)
+    public static void printAggregatedStatistics(ArrayList<SamJob> completedJobs, float totalResponseTime)
     {
         float totalWait = 0.0f;
         float totalTurnAround = 0.0f;
 
         //Aggregate the total wait time and total turn around time for all completed job chucks
-        for (Job j : completedJobs)
+        for (SamJob j : completedJobs)
         {
             totalWait += j.getWaitingTime();
             totalTurnAround += j.getTurnAroundTime();
@@ -102,9 +102,9 @@ public class FirstComeFirstServed {
         System.out.println("-----------------------------------------------------------------------------");
     }
 
-    public static ArrayList<Job> createListOfJobs() {
+    public static ArrayList<SamJob> createListOfJobs() {
 
-        ArrayList<Job> randomJobList = new ArrayList<>(); // list of jobs
+        ArrayList<SamJob> randomJobList = new ArrayList<>(); // list of jobs
         int[] arrivalArray = new int[arrival_time_quanta_max]; // to ensure that no 2 jobs will have the same arrival time.
 
         //populate a temp list of possible arrival times
@@ -125,7 +125,7 @@ public class FirstComeFirstServed {
 
             // (used for ensuring that no 2 jobs will share the same arrival time)
             if (arrivalArray[jobNum] != -1) {
-                Job single_job = new Job();
+                SamJob single_job = new SamJob();
 
                 single_job.setJobName(Integer.toString(i));
                 single_job.setArrivalTime(arrivalArray[jobNum]);
@@ -144,9 +144,9 @@ public class FirstComeFirstServed {
         return randomJobList;
     }
 
-    static class SortByArrival implements Comparator<Job> {
+    static class SortByArrival implements Comparator<SamJob> {
         @Override
-        public int compare(Job j1, Job j2) {
+        public int compare(SamJob j1, SamJob j2) {
             if ((j1.getArrivalTime() - j2.getArrivalTime()) >= 0) {
                 return 1;
             } else {
@@ -158,7 +158,11 @@ public class FirstComeFirstServed {
 }
 
 
+<<<<<<< HEAD
 class Job {
+=======
+    class SamJob {
+>>>>>>> 8fec3e58567e68cf622ca6fe7058fac3241944db
     private String jobName; // name of job
     private int arrivalTime; // arrival instance
     private float responseTime; // amount of time for which a was used for processing instructions
@@ -170,7 +174,7 @@ class Job {
     /**
      * Default Constructor
      */
-    public Job()
+    public SamJob()
     {
         this.jobName = "DEFAULT";
         this.arrivalTime = -1;
@@ -186,7 +190,7 @@ class Job {
      * @param responseTime: amount of time for which a was used for processing instructions
      * @param priority: can only be 1 to 4
      */
-    public Job(String jobName, int arrivalTime, float responseTime, int priority)
+    public SamJob(String jobName, int arrivalTime, float responseTime, int priority)
     {
         this.jobName = jobName;
         this.arrivalTime = arrivalTime;
