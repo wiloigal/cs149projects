@@ -1,0 +1,416 @@
+ 1st Run:
+
+Name: RN Arrival time: 22  Expected Runtime: 5.8 priority: 4 
+Name: LO Arrival time: 24  Expected Runtime: 6.6 priority: 4 
+Name: JP Arrival time: 34  Expected Runtime: 7.6 priority: 1 
+Name: FR Arrival time: 37  Expected Runtime: 9.2 priority: 3 
+Name: DJ Arrival time: 40  Expected Runtime: 3.5 priority: 3 
+Name: AV Arrival time: 41  Expected Runtime: 0.7 priority: 1 
+Name: PR Arrival time: 42  Expected Runtime: 4.6 priority: 3 
+Name: PR Arrival time: 43  Expected Runtime: 4.2 priority: 4 
+Name: BL Arrival time: 44  Expected Runtime: 7.9 priority: 1 
+Name: BO Arrival time: 47  Expected Runtime: 4.2 priority: 1 
+Name: VX Arrival time: 54  Expected Runtime: 6.8 priority: 1 
+Name: BO Arrival time: 63  Expected Runtime: 0.5 priority: 4 
+Name: QO Arrival time: 69  Expected Runtime: 5.9 priority: 2 
+Name: VX Arrival time: 79  Expected Runtime: 4.6 priority: 4 
+Name: TK Arrival time: 80  Expected Runtime: 2.2 priority: 4 
+Name: CC Arrival time: 85  Expected Runtime: 4.2 priority: 1 
+Name: ZO Arrival time: 94  Expected Runtime: 6.4 priority: 4 
+Name: CZ Arrival time: 96  Expected Runtime: 6.3 priority: 4 
+Name: QQ Arrival time: 97  Expected Runtime: 5.1 priority: 2 
+Name: RL Arrival time: 99  Expected Runtime: 1.2 priority: 1 
+
+
+|    |    |    |    |    |    |    |    |    |    |
+|    |    |    |    |    |    |    |    |    |    |
+|    |    | RN | RN | RN | RN | RN | RN | LO | LO |
+| LO | LO | LO | LO | LO | JP | JP | JP | JP | JP |
+| JP | JP | JP | AV | BL | BL | BL | BL | BL | BL |
+| BL | BL | BO | BO | BO | BO | BO | VX | VX | VX |
+| VX | VX | VX | VX | FR | FR | FR | FR | FR | FR |
+| FR | FR | FR | FR | QO | QO | QO | QO | QO | QO |
+| DJ | DJ | DJ | DJ | PR | PR | PR | PR | PR | CC |
+| CC | CC | CC | CC | PR | PR | PR | PR | PR | RL |
+| RL | QQ | QQ | QQ | QQ | QQ | QQ | BO | VX | VX |
+| VX | VX | VX | TK | TK | TK | ZO | ZO | ZO | ZO |
+| ZO | ZO | ZO | CZ | CZ | CZ | CZ | CZ | CZ | CZ 
+
+1st Priority Queue:
+   Average turnaround: 6.800  Average waiting time: 2.143  Average response time: 2.143  Throughput: 0.090
+
+2nd Priority Queue:
+  Average turnaround: 10.000  Average waiting time: 4.500  Average response time: 4.500  Throughput: 0.061
+
+3rd Priority Queue:
+  Average turnaround: 42.100  Average waiting time: 36.333  Average response time: 36.333  Throughput: 0.086
+
+4th Priority Queue:
+  Average turnaround: 30.825  Average waiting time: 26.250  Average response time: 26.250  Throughput: 0.074
+
+Overall:
+  Average turnaround: 22.025  Average waiting time: 17.150  Average response time: 17.150  Throughput: 0.154
+
+ 2nd Run:
+
+Name: CR Arrival time: 2   Expected Runtime: 5.3 priority: 1 
+Name: AB Arrival time: 8   Expected Runtime: 1.7 priority: 3 
+Name: UM Arrival time: 15  Expected Runtime: 7.5 priority: 2 
+Name: SH Arrival time: 17  Expected Runtime: 4.7 priority: 1 
+Name: EM Arrival time: 22  Expected Runtime: 4.6 priority: 3 
+Name: LL Arrival time: 24  Expected Runtime: 8.2 priority: 2 
+Name: SX Arrival time: 34  Expected Runtime: 4.4 priority: 3 
+Name: OI Arrival time: 37  Expected Runtime: 3.6 priority: 1 
+Name: SH Arrival time: 40  Expected Runtime: 8.3 priority: 2 
+Name: LI Arrival time: 41  Expected Runtime: 3.6 priority: 2 
+Name: WC Arrival time: 42  Expected Runtime: 2.9 priority: 3 
+Name: TE Arrival time: 43  Expected Runtime: 0.3 priority: 2 
+Name: ES Arrival time: 44  Expected Runtime: 7.3 priority: 2 
+Name: GQ Arrival time: 45  Expected Runtime: 3.9 priority: 3 
+Name: MW Arrival time: 47  Expected Runtime: 3.5 priority: 3 
+Name: HO Arrival time: 54  Expected Runtime: 6.4 priority: 3 
+Name: ZY Arrival time: 62  Expected Runtime: 3.8 priority: 3 
+Name: QQ Arrival time: 63  Expected Runtime: 9.1 priority: 2 
+Name: BW Arrival time: 67  Expected Runtime: 9.3 priority: 3 
+Name: HR Arrival time: 69  Expected Runtime: 4.9 priority: 2 
+Name: QR Arrival time: 76  Expected Runtime: 8.3 priority: 2 
+Name: KU Arrival time: 79  Expected Runtime: 0.3 priority: 3 
+Name: PN Arrival time: 80  Expected Runtime: 9.2 priority: 2 
+Name: EO Arrival time: 85  Expected Runtime: 4.9 priority: 4 
+Name: GJ Arrival time: 89  Expected Runtime: 2.5 priority: 3 
+Name: ZB Arrival time: 93  Expected Runtime: 5.4 priority: 3 
+Name: GC Arrival time: 94  Expected Runtime: 7.4 priority: 1 
+Name: YL Arrival time: 96  Expected Runtime: 7.5 priority: 2 
+Name: AL Arrival time: 97  Expected Runtime: 6.3 priority: 3 
+Name: AL Arrival time: 99  Expected Runtime: 6.1 priority: 1 
+
+
+|    |    | CR | CR | CR | CR | CR | CR | AB | AB |
+|    |    |    |    |    | UM | UM | UM | UM | UM |
+| UM | UM | UM | SH | SH | SH | SH | SH | LL | LL |
+| LL | LL | LL | LL | LL | LL | LL | OI | OI | OI |
+| OI | SH | SH | SH | SH | SH | SH | SH | SH | SH |
+| LI | LI | LI | LI | TE | ES | ES | ES | ES | ES |
+| ES | ES | ES | QQ | QQ | QQ | QQ | QQ | QQ | QQ |
+| QQ | QQ | QQ | HR | HR | HR | HR | HR | QR | QR |
+| QR | QR | QR | QR | QR | QR | QR | PN | PN | PN |
+| PN | PN | PN | PN | PN | PN | PN | GC | GC | GC |
+| GC | GC | GC | GC | GC | AL | AL | AL | AL | AL |
+| AL | AL | YL | YL | YL | YL | YL | YL | YL | YL |
+| EM | EM | EM | EM | EM | SX | SX | SX | SX | SX |
+| WC | WC | WC | GQ | GQ | GQ | GQ | MW | MW | MW |
+| MW | HO | HO | HO | HO | HO | HO | HO | ZY | ZY |
+| ZY | ZY | BW | BW | BW | BW | BW | BW | BW | BW |
+| BW | BW | KU | GJ | GJ | GJ | ZB | ZB | ZB | ZB |
+| ZB | ZB | AL | AL | AL | AL | AL | AL | AL | EO |
+| EO | EO | EO | EO 
+
+1st Priority Queue:
+   Average turnaround: 8.420  Average waiting time: 3.000  Average response time: 3.000  Throughput: 0.028
+
+2nd Priority Queue:
+  Average turnaround: 12.655  Average waiting time: 5.909  Average response time: 5.909  Throughput: 0.105
+
+3rd Priority Queue:
+  Average turnaround: 82.538  Average waiting time: 78.308  Average response time: 78.308  Throughput: 0.076
+
+4th Priority Queue:
+  Average turnaround: 98.900  Average waiting time: 94.000  Average response time: 94.000  Throughput: 0.200
+
+Overall:
+  Average turnaround: 45.107  Average waiting time: 39.733  Average response time: 39.733  Throughput: 0.163
+
+ 3rd Run:
+
+Name: HB Arrival time: 2   Expected Runtime: 5.6 priority: 3 
+Name: PO Arrival time: 4   Expected Runtime: 1.4 priority: 4 
+Name: FV Arrival time: 7   Expected Runtime: 7.5 priority: 3 
+Name: DF Arrival time: 8   Expected Runtime: 6.2 priority: 2 
+Name: MF Arrival time: 11  Expected Runtime: 6.7 priority: 3 
+Name: WM Arrival time: 15  Expected Runtime: 9.9 priority: 3 
+Name: DC Arrival time: 17  Expected Runtime: 6.3 priority: 2 
+Name: DL Arrival time: 18  Expected Runtime: 8.4 priority: 1 
+Name: OU Arrival time: 22  Expected Runtime: 6.8 priority: 1 
+Name: IR Arrival time: 24  Expected Runtime: 6.3 priority: 2 
+Name: WL Arrival time: 27  Expected Runtime: 8.0 priority: 2 
+Name: GD Arrival time: 29  Expected Runtime: 7.6 priority: 3 
+Name: ZI Arrival time: 34  Expected Runtime: 7.7 priority: 1 
+Name: DI Arrival time: 37  Expected Runtime: 2.7 priority: 2 
+Name: FP Arrival time: 40  Expected Runtime: 7.6 priority: 4 
+Name: PC Arrival time: 41  Expected Runtime: 7.0 priority: 3 
+Name: AV Arrival time: 42  Expected Runtime: 2.1 priority: 4 
+Name: AM Arrival time: 43  Expected Runtime: 9.4 priority: 1 
+Name: WV Arrival time: 44  Expected Runtime: 4.2 priority: 3 
+Name: RF Arrival time: 45  Expected Runtime: 2.9 priority: 1 
+Name: HE Arrival time: 46  Expected Runtime: 0.7 priority: 3 
+Name: ED Arrival time: 47  Expected Runtime: 5.8 priority: 1 
+Name: ZJ Arrival time: 54  Expected Runtime: 3.7 priority: 3 
+Name: XC Arrival time: 58  Expected Runtime: 4.2 priority: 3 
+Name: XK Arrival time: 62  Expected Runtime: 1.2 priority: 3 
+Name: GS Arrival time: 63  Expected Runtime: 2.5 priority: 1 
+Name: PR Arrival time: 67  Expected Runtime: 4.1 priority: 3 
+Name: WH Arrival time: 69  Expected Runtime: 6.3 priority: 3 
+Name: UP Arrival time: 71  Expected Runtime: 9.0 priority: 2 
+Name: IL Arrival time: 76  Expected Runtime: 2.3 priority: 1 
+Name: GM Arrival time: 78  Expected Runtime: 8.2 priority: 1 
+Name: RJ Arrival time: 79  Expected Runtime: 3.9 priority: 1 
+Name: OV Arrival time: 80  Expected Runtime: 1.9 priority: 2 
+Name: BY Arrival time: 85  Expected Runtime: 7.7 priority: 3 
+Name: KY Arrival time: 89  Expected Runtime: 2.4 priority: 3 
+Name: WP Arrival time: 93  Expected Runtime: 5.6 priority: 4 
+Name: VF Arrival time: 94  Expected Runtime: 1.9 priority: 2 
+Name: TJ Arrival time: 96  Expected Runtime: 2.7 priority: 4 
+Name: XS Arrival time: 97  Expected Runtime: 5.2 priority: 1 
+Name: QW Arrival time: 99  Expected Runtime: 8.0 priority: 3 
+
+
+|    |    | HB | HB | HB | HB | HB | HB | DF | DF |
+| DF | DF | DF | DF | DF | FV | FV | FV | FV | FV |
+| FV | FV | FV | DL | DL | DL | DL | DL | DL | DL |
+| DL | DL | OU | OU | OU | OU | OU | OU | OU | ZI |
+| ZI | ZI | ZI | ZI | ZI | ZI | ZI | AM | AM | AM |
+| AM | AM | AM | AM | AM | AM | AM | RF | RF | RF |
+| ED | ED | ED | ED | ED | ED | GS | GS | GS | DC |
+| DC | DC | DC | DC | DC | DC | IL | IL | IL | GM |
+| GM | GM | GM | GM | GM | GM | GM | GM | RJ | RJ |
+| RJ | RJ | IR | IR | IR | IR | IR | IR | IR | XS |
+| XS | XS | XS | XS | XS | WL | WL | WL | WL | WL |
+| WL | WL | WL | DI | DI | DI | UP | UP | UP | UP |
+| UP | UP | UP | UP | UP | OV | OV | VF | VF | MF |
+| MF | MF | MF | MF | MF | MF | WM | WM | WM | WM |
+| WM | WM | WM | WM | WM | WM | GD | GD | GD | GD |
+| GD | GD | GD | GD | PC | PC | PC | PC | PC | PC |
+| PC | WV | WV | WV | WV | WV | HE | ZJ | ZJ | ZJ |
+| ZJ | XC | XC | XC | XC | XC | XK | XK | PR | PR |
+| PR | PR | PR | WH | WH | WH | WH | WH | WH | WH |
+| BY | BY | BY | BY | BY | BY | BY | BY | KY | KY |
+| KY | QW | QW | QW | QW | QW | QW | QW | QW | PO |
+| PO | FP | FP | FP | FP | FP | FP | FP | FP | AV |
+| AV | AV | WP | WP | WP | WP | WP | WP | TJ | TJ |
+| TJ 
+
+1st Priority Queue:
+   Average turnaround: 11.555  Average waiting time: 5.818  Average response time: 5.818  Throughput: 0.134
+
+2nd Priority Queue:
+  Average turnaround: 54.912  Average waiting time: 49.625  Average response time: 49.625  Throughput: 0.066
+
+3rd Priority Queue:
+  Average turnaround: 105.113  Average waiting time: 99.688  Average response time: 99.688  Throughput: 0.077
+
+4th Priority Queue:
+  Average turnaround: 166.680  Average waiting time: 162.800  Average response time: 162.800  Throughput: 0.227
+
+Overall:
+  Average turnaround: 77.040  Average waiting time: 71.750  Average response time: 71.750  Throughput: 0.173
+
+ 4th Run:
+
+Name: IY Arrival time: 2   Expected Runtime: 4.6 priority: 2 
+Name: QE Arrival time: 4   Expected Runtime: 4.7 priority: 3 
+Name: KU Arrival time: 7   Expected Runtime: 2.8 priority: 4 
+Name: HC Arrival time: 8   Expected Runtime: 6.8 priority: 4 
+Name: LB Arrival time: 9   Expected Runtime: 2.1 priority: 1 
+Name: SS Arrival time: 11  Expected Runtime: 7.2 priority: 4 
+Name: VM Arrival time: 13  Expected Runtime: 5.1 priority: 2 
+Name: YW Arrival time: 15  Expected Runtime: 3.7 priority: 4 
+Name: WG Arrival time: 17  Expected Runtime: 4.1 priority: 3 
+Name: GX Arrival time: 18  Expected Runtime: 1.7 priority: 4 
+Name: OC Arrival time: 19  Expected Runtime: 8.5 priority: 3 
+Name: OF Arrival time: 22  Expected Runtime: 3.8 priority: 4 
+Name: EB Arrival time: 24  Expected Runtime: 6.1 priority: 2 
+Name: RQ Arrival time: 27  Expected Runtime: 3.7 priority: 1 
+Name: AA Arrival time: 29  Expected Runtime: 3.1 priority: 2 
+Name: BO Arrival time: 34  Expected Runtime: 4.0 priority: 1 
+Name: SJ Arrival time: 37  Expected Runtime: 4.6 priority: 2 
+Name: HD Arrival time: 39  Expected Runtime: 5.3 priority: 4 
+Name: BK Arrival time: 40  Expected Runtime: 8.7 priority: 1 
+Name: LB Arrival time: 41  Expected Runtime: 4.0 priority: 4 
+Name: NW Arrival time: 42  Expected Runtime: 7.6 priority: 3 
+Name: QQ Arrival time: 43  Expected Runtime: 6.5 priority: 3 
+Name: IP Arrival time: 44  Expected Runtime: 7.6 priority: 2 
+Name: OG Arrival time: 45  Expected Runtime: 2.3 priority: 2 
+Name: XZ Arrival time: 46  Expected Runtime: 7.0 priority: 1 
+Name: VK Arrival time: 47  Expected Runtime: 5.8 priority: 2 
+Name: KP Arrival time: 54  Expected Runtime: 3.0 priority: 4 
+Name: VV Arrival time: 58  Expected Runtime: 1.1 priority: 1 
+Name: YN Arrival time: 62  Expected Runtime: 5.5 priority: 2 
+Name: WA Arrival time: 63  Expected Runtime: 0.2 priority: 2 
+Name: PZ Arrival time: 67  Expected Runtime: 5.2 priority: 4 
+Name: UC Arrival time: 68  Expected Runtime: 5.2 priority: 2 
+Name: SP Arrival time: 69  Expected Runtime: 1.1 priority: 4 
+Name: OO Arrival time: 70  Expected Runtime: 6.4 priority: 2 
+Name: FH Arrival time: 71  Expected Runtime: 5.7 priority: 2 
+Name: EG Arrival time: 72  Expected Runtime: 8.4 priority: 4 
+Name: NJ Arrival time: 75  Expected Runtime: 8.6 priority: 1 
+Name: FI Arrival time: 76  Expected Runtime: 6.5 priority: 4 
+Name: DM Arrival time: 78  Expected Runtime: 6.5 priority: 4 
+Name: NU Arrival time: 79  Expected Runtime: 2.6 priority: 2 
+Name: CJ Arrival time: 80  Expected Runtime: 0.8 priority: 4 
+Name: PD Arrival time: 81  Expected Runtime: 1.8 priority: 2 
+Name: BI Arrival time: 85  Expected Runtime: 0.9 priority: 3 
+Name: RB Arrival time: 89  Expected Runtime: 1.2 priority: 1 
+Name: TT Arrival time: 93  Expected Runtime: 9.1 priority: 2 
+Name: HK Arrival time: 94  Expected Runtime: 8.2 priority: 1 
+Name: OI Arrival time: 95  Expected Runtime: 2.0 priority: 3 
+Name: DC Arrival time: 96  Expected Runtime: 7.3 priority: 2 
+Name: NU Arrival time: 97  Expected Runtime: 3.1 priority: 1 
+Name: DR Arrival time: 99  Expected Runtime: 2.0 priority: 3 
+
+
+|    |    | IY | IY | IY | IY | IY | QE | QE | QE |
+| QE | QE | LB | LB | LB | VM | VM | VM | VM | VM |
+| VM | WG | WG | WG | WG | WG | EB | EB | EB | EB |
+| EB | EB | EB | RQ | RQ | RQ | RQ | BO | BO | BO |
+| BO | BK | BK | BK | BK | BK | BK | BK | BK | BK |
+| XZ | XZ | XZ | XZ | XZ | XZ | XZ | AA | AA | AA |
+| AA | VV | VV | SJ | SJ | SJ | SJ | SJ | IP | IP |
+| IP | IP | IP | IP | IP | IP | NJ | NJ | NJ | NJ |
+| NJ | NJ | NJ | NJ | NJ | OG | OG | OG | VK | VK |
+| VK | VK | VK | VK | RB | RB | HK | HK | HK | HK |
+| HK | HK | HK | HK | HK | NU | NU | NU | NU | YN |
+| YN | YN | YN | YN | YN | WA | UC | UC | UC | UC |
+| UC | UC | OO | OO | OO | OO | OO | OO | OO | FH |
+| FH | FH | FH | FH | FH | NU | NU | NU | PD | PD |
+| TT | TT | TT | TT | TT | TT | TT | TT | TT | TT |
+| DC | DC | DC | DC | DC | DC | DC | DC | OC | OC |
+| OC | OC | OC | OC | OC | OC | OC | NW | NW | NW |
+| NW | NW | NW | NW | NW | QQ | QQ | QQ | QQ | QQ |
+| QQ | QQ | BI | OI | OI | DR | DR | KU | KU | KU |
+| HC | HC | HC | HC | HC | HC | HC | SS | SS | SS |
+| SS | SS | SS | SS | SS | YW | YW | YW | YW | GX |
+| GX | OF | OF | OF | OF | HD | HD | HD | HD | HD |
+| HD | LB | LB | LB | LB | KP | KP | KP | PZ | PZ |
+| PZ | PZ | PZ | PZ | SP | SP | EG | EG | EG | EG |
+| EG | EG | EG | EG | EG | FI | FI | FI | FI | FI |
+| FI | FI | DM | DM | DM | DM | DM | DM | DM | CJ 
+
+1st Priority Queue:
+   Average turnaround: 8.370  Average waiting time: 3.600  Average response time: 3.600  Throughput: 0.047
+
+2nd Priority Queue:
+  Average turnaround: 42.176  Average waiting time: 37.294  Average response time: 37.294  Throughput: 0.109
+
+3rd Priority Queue:
+  Average turnaround: 88.788  Average waiting time: 84.250  Average response time: 84.250  Throughput: 0.044
+
+4th Priority Queue:
+  Average turnaround: 181.587  Average waiting time: 177.133  Average response time: 177.133  Throughput: 0.060
+
+Overall:
+  Average turnaround: 84.696  Average waiting time: 80.020  Average response time: 80.020  Throughput: 0.192
+
+ 5th Run:
+
+Name: QZ Arrival time: 2   Expected Runtime: 7.9 priority: 1 
+Name: GC Arrival time: 4   Expected Runtime: 1.4 priority: 4 
+Name: LO Arrival time: 5   Expected Runtime: 0.1 priority: 2 
+Name: QJ Arrival time: 6   Expected Runtime: 8.2 priority: 2 
+Name: TR Arrival time: 7   Expected Runtime: 9.0 priority: 1 
+Name: BM Arrival time: 8   Expected Runtime: 7.2 priority: 4 
+Name: QZ Arrival time: 9   Expected Runtime: 9.2 priority: 3 
+Name: SR Arrival time: 11  Expected Runtime: 4.8 priority: 2 
+Name: UY Arrival time: 13  Expected Runtime: 3.4 priority: 3 
+Name: BM Arrival time: 14  Expected Runtime: 5.5 priority: 3 
+Name: WL Arrival time: 15  Expected Runtime: 7.2 priority: 1 
+Name: CH Arrival time: 17  Expected Runtime: 4.4 priority: 1 
+Name: WP Arrival time: 18  Expected Runtime: 3.2 priority: 2 
+Name: OZ Arrival time: 19  Expected Runtime: 4.1 priority: 3 
+Name: MI Arrival time: 20  Expected Runtime: 5.1 priority: 3 
+Name: BD Arrival time: 22  Expected Runtime: 1.6 priority: 3 
+Name: SK Arrival time: 24  Expected Runtime: 8.1 priority: 1 
+Name: NX Arrival time: 27  Expected Runtime: 4.3 priority: 2 
+Name: JR Arrival time: 28  Expected Runtime: 4.5 priority: 2 
+Name: LS Arrival time: 29  Expected Runtime: 3.2 priority: 4 
+Name: EP Arrival time: 31  Expected Runtime: 0.4 priority: 1 
+Name: DZ Arrival time: 34  Expected Runtime: 0.5 priority: 3 
+Name: XM Arrival time: 37  Expected Runtime: 6.7 priority: 3 
+Name: NN Arrival time: 39  Expected Runtime: 6.2 priority: 2 
+Name: JA Arrival time: 40  Expected Runtime: 8.2 priority: 2 
+Name: EL Arrival time: 41  Expected Runtime: 3.1 priority: 2 
+Name: OE Arrival time: 42  Expected Runtime: 9.9 priority: 3 
+Name: QP Arrival time: 43  Expected Runtime: 6.7 priority: 1 
+Name: IF Arrival time: 44  Expected Runtime: 0.8 priority: 4 
+Name: LF Arrival time: 45  Expected Runtime: 7.7 priority: 4 
+Name: DM Arrival time: 46  Expected Runtime: 9.7 priority: 4 
+Name: PW Arrival time: 47  Expected Runtime: 8.2 priority: 4 
+Name: SM Arrival time: 54  Expected Runtime: 8.2 priority: 4 
+Name: IC Arrival time: 55  Expected Runtime: 2.7 priority: 2 
+Name: PQ Arrival time: 58  Expected Runtime: 7.1 priority: 3 
+Name: AF Arrival time: 62  Expected Runtime: 3.8 priority: 4 
+Name: XN Arrival time: 63  Expected Runtime: 6.7 priority: 2 
+Name: RH Arrival time: 64  Expected Runtime: 3.6 priority: 1 
+Name: OW Arrival time: 67  Expected Runtime: 0.2 priority: 1 
+Name: IY Arrival time: 68  Expected Runtime: 2.2 priority: 4 
+Name: XO Arrival time: 69  Expected Runtime: 1.0 priority: 4 
+Name: SG Arrival time: 70  Expected Runtime: 7.9 priority: 1 
+Name: ZP Arrival time: 71  Expected Runtime: 3.4 priority: 4 
+Name: TB Arrival time: 72  Expected Runtime: 6.0 priority: 4 
+Name: YI Arrival time: 75  Expected Runtime: 3.2 priority: 2 
+Name: SZ Arrival time: 76  Expected Runtime: 4.7 priority: 4 
+Name: YK Arrival time: 78  Expected Runtime: 4.6 priority: 3 
+Name: QD Arrival time: 79  Expected Runtime: 7.8 priority: 3 
+Name: NZ Arrival time: 80  Expected Runtime: 8.0 priority: 1 
+Name: NI Arrival time: 81  Expected Runtime: 9.2 priority: 2 
+Name: TZ Arrival time: 83  Expected Runtime: 9.3 priority: 3 
+Name: ST Arrival time: 85  Expected Runtime: 6.4 priority: 1 
+Name: HM Arrival time: 86  Expected Runtime: 7.4 priority: 1 
+Name: WV Arrival time: 89  Expected Runtime: 7.8 priority: 4 
+Name: GM Arrival time: 93  Expected Runtime: 1.4 priority: 3 
+Name: KB Arrival time: 94  Expected Runtime: 1.7 priority: 2 
+Name: ZW Arrival time: 95  Expected Runtime: 6.2 priority: 3 
+Name: JS Arrival time: 96  Expected Runtime: 4.6 priority: 3 
+Name: OX Arrival time: 97  Expected Runtime: 2.5 priority: 4 
+Name: UT Arrival time: 99  Expected Runtime: 8.3 priority: 1 
+
+
+|    |    | QZ | QZ | QZ | QZ | QZ | QZ | QZ | QZ |
+| TR | TR | TR | TR | TR | TR | TR | TR | TR | WL |
+| WL | WL | WL | WL | WL | WL | WL | CH | CH | CH |
+| CH | CH | SK | SK | SK | SK | SK | SK | SK | SK |
+| SK | EP | LO | QP | QP | QP | QP | QP | QP | QP |
+| QJ | QJ | QJ | QJ | QJ | QJ | QJ | QJ | QJ | SR |
+| SR | SR | SR | SR | RH | RH | RH | RH | OW | WP |
+| WP | WP | WP | SG | SG | SG | SG | SG | SG | SG |
+| SG | NZ | NZ | NZ | NZ | NZ | NZ | NZ | NZ | ST |
+| ST | ST | ST | ST | ST | ST | HM | HM | HM | HM |
+| HM | HM | HM | HM | UT | UT | UT | UT | UT | UT |
+| UT | UT | UT | NX | NX | NX | NX | NX | JR | JR |
+| JR | JR | JR | NN | NN | NN | NN | NN | NN | NN |
+| JA | JA | JA | JA | JA | JA | JA | JA | JA | EL |
+| EL | EL | EL | IC | IC | IC | XN | XN | XN | XN |
+| XN | XN | XN | YI | YI | YI | YI | NI | NI | NI |
+| NI | NI | NI | NI | NI | NI | NI | KB | KB | QZ |
+| QZ | QZ | QZ | QZ | QZ | QZ | QZ | QZ | QZ | UY |
+| UY | UY | UY | BM | BM | BM | BM | BM | BM | OZ |
+| OZ | OZ | OZ | OZ | MI | MI | MI | MI | MI | MI |
+| BD | BD | DZ | XM | XM | XM | XM | XM | XM | XM |
+| OE | OE | OE | OE | OE | OE | OE | OE | OE | OE |
+| PQ | PQ | PQ | PQ | PQ | PQ | PQ | PQ | YK | YK |
+| YK | YK | YK | QD | QD | QD | QD | QD | QD | QD |
+| QD | TZ | TZ | TZ | TZ | TZ | TZ | TZ | TZ | TZ |
+| TZ | GM | GM | ZW | ZW | ZW | ZW | ZW | ZW | ZW |
+| JS | JS | JS | JS | JS | GC | GC | BM | BM | BM |
+| BM | BM | BM | BM | BM | LS | LS | LS | LS | IF |
+| LF | LF | LF | LF | LF | LF | LF | LF | DM | DM |
+| DM | DM | DM | DM | DM | DM | DM | DM | PW | PW |
+| PW | PW | PW | PW | PW | PW | PW | SM | SM | SM |
+| SM | SM | SM | SM | SM | SM | AF | AF | AF | AF |
+| IY | IY | IY | XO | ZP | ZP | ZP | ZP | TB | TB |
+| TB | TB | TB | TB | SZ | SZ | SZ | SZ | SZ | WV |
+| WV | WV | WV | WV | WV | WV | WV | OX | OX | OX 
+
+1st Priority Queue:
+   Average turnaround: 10.321  Average waiting time: 4.214  Average response time: 4.214  Throughput: 0.079
+
+2nd Priority Queue:
+  Average turnaround: 78.007  Average waiting time: 73.286  Average response time: 73.286  Throughput: 0.110
+
+3rd Priority Queue:
+  Average turnaround: 169.375  Average waiting time: 163.938  Average response time: 163.938  Throughput: 0.059
+
+4th Priority Queue:
+  Average turnaround: 255.425  Average waiting time: 250.563  Average response time: 250.563  Throughput: 0.096
+
+Overall:
+  Average turnaround: 133.890  Average waiting time: 128.617  Average response time: 128.617  Throughput: 0.171

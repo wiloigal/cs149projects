@@ -1,0 +1,2278 @@
+**********************************************
+Running RR 6 times.
+**********************************************
+
+
+RR run #1
+Statistics for priority 1
+Process Name: P2
+Arrival time: 30.076517
+Estimated runtime: 0.6507196
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 46.189346
+Estimated runtime: 3.6723166
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P26
+Arrival time: 42.99619
+Estimated runtime: 7.9234223
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 6.4150195
+Estimated runtime: 9.704294
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P31
+Arrival time: 70.280426
+Estimated runtime: 1.057336
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P35
+Arrival time: 62.811905
+Estimated runtime: 4.4315376
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P38
+Arrival time: 3.2741215
+Estimated runtime: 0.28716996
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P39
+Arrival time: 28.571533
+Estimated runtime: 7.017591
+Priority: 1
+ AverageTurnaround: 
+
+
+Average turnaround time: 86.875
+Average wait time: 46.20507
+Average response time: 43.125
+Throughput: 0.053691275 processes per quantum
+
+Statistics for priority 2
+Process Name: P3
+Arrival time: 60.68125
+Estimated runtime: 8.398327
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P6
+Arrival time: 43.44306
+Estimated runtime: 4.7487082
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P16
+Arrival time: 56.277485
+Estimated runtime: 4.075583
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P22
+Arrival time: 74.09089
+Estimated runtime: 2.6544414
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P23
+Arrival time: 48.39453
+Estimated runtime: 0.70271325
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 17.111208
+Estimated runtime: 1.8426778
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 68.86823
+Estimated runtime: 0.55166006
+Priority: 2
+ AverageTurnaround: 
+
+
+Average turnaround time: 98.28571
+Average wait time: 42.308464
+Average response time: 64.0
+Throughput: 0.046979867 processes per quantum
+
+Statistics for priority 3
+Process Name: P4
+Arrival time: 51.112404
+Estimated runtime: 7.6584616
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P5
+Arrival time: 77.02525
+Estimated runtime: 1.117133
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 48.815536
+Estimated runtime: 7.4798107
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 75.08895
+Estimated runtime: 5.829217
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 8.165444
+Estimated runtime: 1.4144354
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P11
+Arrival time: 46.4745
+Estimated runtime: 1.513375
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 17.780931
+Estimated runtime: 5.5807896
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P14
+Arrival time: 72.58445
+Estimated runtime: 0.76659536
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 28.171915
+Estimated runtime: 6.6176214
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 45.42081
+Estimated runtime: 1.5257038
+Priority: 3
+ AverageTurnaround: 
+
+
+Average turnaround time: 94.6
+Average wait time: 43.585667
+Average response time: 57.5
+Throughput: 0.06711409 processes per quantum
+
+Statistics for priority 4
+Process Name: P12
+Arrival time: 44.002346
+Estimated runtime: 2.8112214
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P17
+Arrival time: 1.9810779
+Estimated runtime: 6.5458965
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P20
+Arrival time: 26.666817
+Estimated runtime: 4.228045
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P24
+Arrival time: 63.480583
+Estimated runtime: 2.3239412
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P27
+Arrival time: 8.326019
+Estimated runtime: 3.725756
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 33.370033
+Estimated runtime: 8.108383
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 37.809605
+Estimated runtime: 4.8515177
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P40
+Arrival time: 55.171955
+Estimated runtime: 1.9892222
+Priority: 4
+ AverageTurnaround: 
+
+
+Average turnaround time: 78.375
+Average wait time: 40.200947
+Average response time: 40.25
+Throughput: 0.053691275 processes per quantum
+
+
+
+Overall statistics
+Process Name: P2
+Arrival time: 30.076517
+Estimated runtime: 0.6507196
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P3
+Arrival time: 60.68125
+Estimated runtime: 8.398327
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P4
+Arrival time: 51.112404
+Estimated runtime: 7.6584616
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P5
+Arrival time: 77.02525
+Estimated runtime: 1.117133
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P6
+Arrival time: 43.44306
+Estimated runtime: 4.7487082
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 48.815536
+Estimated runtime: 7.4798107
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 75.08895
+Estimated runtime: 5.829217
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 8.165444
+Estimated runtime: 1.4144354
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P11
+Arrival time: 46.4745
+Estimated runtime: 1.513375
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P12
+Arrival time: 44.002346
+Estimated runtime: 2.8112214
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 17.780931
+Estimated runtime: 5.5807896
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P14
+Arrival time: 72.58445
+Estimated runtime: 0.76659536
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P16
+Arrival time: 56.277485
+Estimated runtime: 4.075583
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P17
+Arrival time: 1.9810779
+Estimated runtime: 6.5458965
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 46.189346
+Estimated runtime: 3.6723166
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P20
+Arrival time: 26.666817
+Estimated runtime: 4.228045
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P22
+Arrival time: 74.09089
+Estimated runtime: 2.6544414
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P23
+Arrival time: 48.39453
+Estimated runtime: 0.70271325
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P24
+Arrival time: 63.480583
+Estimated runtime: 2.3239412
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 17.111208
+Estimated runtime: 1.8426778
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P26
+Arrival time: 42.99619
+Estimated runtime: 7.9234223
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P27
+Arrival time: 8.326019
+Estimated runtime: 3.725756
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 33.370033
+Estimated runtime: 8.108383
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 28.171915
+Estimated runtime: 6.6176214
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 6.4150195
+Estimated runtime: 9.704294
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P31
+Arrival time: 70.280426
+Estimated runtime: 1.057336
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 37.809605
+Estimated runtime: 4.8515177
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P35
+Arrival time: 62.811905
+Estimated runtime: 4.4315376
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 68.86823
+Estimated runtime: 0.55166006
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 45.42081
+Estimated runtime: 1.5257038
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P38
+Arrival time: 3.2741215
+Estimated runtime: 0.28716996
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P39
+Arrival time: 28.571533
+Estimated runtime: 7.017591
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P40
+Arrival time: 55.171955
+Estimated runtime: 1.9892222
+Priority: 4
+ AverageTurnaround: 
+
+
+|Q000: wait||Q001: wait||Q002:  P17||Q003:  P17||Q004:  P38||Q005:  P17||Q006:  P17||Q007:  P30||Q008:  P17||Q009:  P30|
+|Q010:  P10||Q011:  P27||Q012:  P17||Q013:  P30||Q014:  P10||Q015:  P27||Q016:  P17||Q017:  P30||Q018:  P27||Q019:  P25|
+|Q020:  P13||Q021:  P30||Q022:  P27||Q023:  P25||Q024:  P13||Q025:  P30||Q026:  P13||Q027:  P30||Q028:  P20||Q029:  P13|
+|Q030:  P30||Q031:  P29||Q032:  P39||Q033:  P20||Q034:  P13||Q035:   P2||Q036:  P30||Q037:  P29||Q038:  P39||Q039:  P28|
+|Q040:  P20||Q041:  P13||Q042:  P30||Q043:  P33||Q044:  P29||Q045:  P39||Q046:  P28||Q047:  P20||Q048:  P26||Q049:   P6|
+|Q050:  P33||Q051:  P12||Q052:  P29||Q053:  P37||Q054:  P39||Q055:  P18||Q056:  P11||Q057:  P28||Q058:  P20||Q059:  P23|
+|Q060:   P7||Q061:  P26||Q062:   P6||Q063:  P33||Q064:   P4||Q065:  P12||Q066:  P29||Q067:  P37||Q068:  P39||Q069:  P40|
+|Q070:  P18||Q071:  P16||Q072:  P11||Q073:  P28||Q074:   P3||Q075:   P7||Q076:  P26||Q077:  P35||Q078:   P6||Q079:  P24|
+|Q080:  P33||Q081:   P4||Q082:  P12||Q083:  P29||Q084:  P36||Q085:  P39||Q086:  P40||Q087:  P31||Q088:  P18||Q089:  P16|
+|Q090:  P14||Q091:  P28||Q092:  P22||Q093:   P3||Q094:   P9||Q095:   P7||Q096:  P26||Q097:   P5||Q098:  P35||Q099:   P6|
+|Q100:  P24||Q101:  P33||Q102:   P4||Q103:  P29||Q104:  P39||Q105:  P31||Q106:  P18||Q107:  P16||Q108:  P28||Q109:  P22|
+|Q110:   P3||Q111:   P9||Q112:   P7||Q113:  P26||Q114:   P5||Q115:  P35||Q116:   P6||Q117:  P24||Q118:   P4||Q119:  P39|
+|Q120:  P16||Q121:  P28||Q122:  P22||Q123:   P3||Q124:   P9||Q125:   P7||Q126:  P26||Q127:  P35||Q128:   P4||Q129:  P16|
+|Q130:  P28||Q131:   P3||Q132:   P9||Q133:   P7||Q134:  P26||Q135:  P35||Q136:   P4||Q137:  P28||Q138:   P3||Q139:   P9|
+|Q140:   P7||Q141:  P26||Q142:   P4||Q143:   P3||Q144:   P9||Q145:   P7||Q146:   P4||Q147:   P3||Q148:   P3|
+Average turnaround time: 89.57576
+Average wait time: 43.12922
+Average response time: 51.21212
+Throughput: 0.22147651 processes per quantum
+
+
+RR run #2
+Statistics for priority 1
+Process Name: P6
+Arrival time: 27.769417
+Estimated runtime: 2.2468655
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 24.80453
+Estimated runtime: 0.8637542
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P14
+Arrival time: 33.516098
+Estimated runtime: 5.9140325
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P15
+Arrival time: 49.62494
+Estimated runtime: 5.4903793
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 38.477013
+Estimated runtime: 5.902837
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P20
+Arrival time: 18.413563
+Estimated runtime: 1.2077212
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 54.28897
+Estimated runtime: 5.98007
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P38
+Arrival time: 22.54246
+Estimated runtime: 3.2004998
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P39
+Arrival time: 62.868828
+Estimated runtime: 0.5719242
+Priority: 1
+ AverageTurnaround: 
+
+
+Average turnaround time: 93.22222
+Average wait time: 52.8129
+Average response time: 47.88889
+Throughput: 0.053892214 processes per quantum
+
+Statistics for priority 2
+Process Name: P3
+Arrival time: 7.1538663
+Estimated runtime: 7.812355
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 16.305775
+Estimated runtime: 9.042397
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P21
+Arrival time: 70.69144
+Estimated runtime: 9.667571
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P35
+Arrival time: 0.39002323
+Estimated runtime: 2.8369036
+Priority: 2
+ AverageTurnaround: 
+
+
+Average turnaround time: 85.0
+Average wait time: 54.02492
+Average response time: 29.0
+Throughput: 0.023952097 processes per quantum
+
+Statistics for priority 3
+Process Name: P4
+Arrival time: 27.21523
+Estimated runtime: 4.4217997
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P5
+Arrival time: 46.582386
+Estimated runtime: 2.7662745
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P8
+Arrival time: 23.702492
+Estimated runtime: 7.5797267
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P16
+Arrival time: 6.619815
+Estimated runtime: 0.23250851
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P23
+Arrival time: 70.47315
+Estimated runtime: 7.277235
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 41.526375
+Estimated runtime: 1.2277534
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P32
+Arrival time: 45.306942
+Estimated runtime: 8.575519
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 22.464956
+Estimated runtime: 3.6293063
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P40
+Arrival time: 16.449768
+Estimated runtime: 8.530562
+Priority: 3
+ AverageTurnaround: 
+
+
+Average turnaround time: 105.0
+Average wait time: 66.713135
+Average response time: 42.666668
+Throughput: 0.053892214 processes per quantum
+
+Statistics for priority 4
+Process Name: P10
+Arrival time: 26.895216
+Estimated runtime: 0.42490074
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P11
+Arrival time: 33.049843
+Estimated runtime: 2.8396127
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P12
+Arrival time: 28.7861
+Estimated runtime: 1.1235578
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 72.360855
+Estimated runtime: 2.2964787
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P22
+Arrival time: 41.584846
+Estimated runtime: 0.26717135
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P24
+Arrival time: 73.8423
+Estimated runtime: 8.939119
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 16.780157
+Estimated runtime: 0.29326436
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P26
+Arrival time: 41.111485
+Estimated runtime: 7.1249433
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P27
+Arrival time: 10.412421
+Estimated runtime: 4.8646603
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 39.418304
+Estimated runtime: 3.5971012
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 40.1729
+Estimated runtime: 1.386928
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P34
+Arrival time: 74.12851
+Estimated runtime: 1.6724138
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 48.415905
+Estimated runtime: 6.8186903
+Priority: 4
+ AverageTurnaround: 
+
+
+Average turnaround time: 88.69231
+Average wait time: 43.414795
+Average response time: 53.76923
+Throughput: 0.077844314 processes per quantum
+
+
+
+Overall statistics
+Process Name: P3
+Arrival time: 7.1538663
+Estimated runtime: 7.812355
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P4
+Arrival time: 27.21523
+Estimated runtime: 4.4217997
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P5
+Arrival time: 46.582386
+Estimated runtime: 2.7662745
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P6
+Arrival time: 27.769417
+Estimated runtime: 2.2468655
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 24.80453
+Estimated runtime: 0.8637542
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P8
+Arrival time: 23.702492
+Estimated runtime: 7.5797267
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 16.305775
+Estimated runtime: 9.042397
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 26.895216
+Estimated runtime: 0.42490074
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P11
+Arrival time: 33.049843
+Estimated runtime: 2.8396127
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P12
+Arrival time: 28.7861
+Estimated runtime: 1.1235578
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 72.360855
+Estimated runtime: 2.2964787
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P14
+Arrival time: 33.516098
+Estimated runtime: 5.9140325
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P15
+Arrival time: 49.62494
+Estimated runtime: 5.4903793
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P16
+Arrival time: 6.619815
+Estimated runtime: 0.23250851
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 38.477013
+Estimated runtime: 5.902837
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P20
+Arrival time: 18.413563
+Estimated runtime: 1.2077212
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P21
+Arrival time: 70.69144
+Estimated runtime: 9.667571
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P22
+Arrival time: 41.584846
+Estimated runtime: 0.26717135
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P23
+Arrival time: 70.47315
+Estimated runtime: 7.277235
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P24
+Arrival time: 73.8423
+Estimated runtime: 8.939119
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 16.780157
+Estimated runtime: 0.29326436
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P26
+Arrival time: 41.111485
+Estimated runtime: 7.1249433
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P27
+Arrival time: 10.412421
+Estimated runtime: 4.8646603
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 41.526375
+Estimated runtime: 1.2277534
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 39.418304
+Estimated runtime: 3.5971012
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 54.28897
+Estimated runtime: 5.98007
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P32
+Arrival time: 45.306942
+Estimated runtime: 8.575519
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 40.1729
+Estimated runtime: 1.386928
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P34
+Arrival time: 74.12851
+Estimated runtime: 1.6724138
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P35
+Arrival time: 0.39002323
+Estimated runtime: 2.8369036
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 22.464956
+Estimated runtime: 3.6293063
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 48.415905
+Estimated runtime: 6.8186903
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P38
+Arrival time: 22.54246
+Estimated runtime: 3.2004998
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P39
+Arrival time: 62.868828
+Estimated runtime: 0.5719242
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P40
+Arrival time: 16.449768
+Estimated runtime: 8.530562
+Priority: 3
+ AverageTurnaround: 
+
+
+|Q000: wait||Q001:  P35||Q002:  P35||Q003:  P35||Q004: wait||Q005: wait||Q006: wait||Q007:  P16||Q008:   P3||Q009:   P3|
+|Q010:   P3||Q011:  P27||Q012:   P3||Q013:  P27||Q014:   P3||Q015:  P27||Q016:   P3||Q017:  P27||Q018:   P9||Q019:  P40|
+|Q020:  P25||Q021:   P3||Q022:  P27||Q023:  P20||Q024:   P9||Q025:  P40||Q026:   P3||Q027:  P36||Q028:  P38||Q029:   P8|
+|Q030:  P20||Q031:   P7||Q032:   P9||Q033:  P40||Q034:  P10||Q035:   P4||Q036:   P6||Q037:  P36||Q038:  P12||Q039:  P38|
+|Q040:   P8||Q041:   P9||Q042:  P11||Q043:  P14||Q044:  P40||Q045:   P4||Q046:   P6||Q047:  P36||Q048:  P18||Q049:  P12|
+|Q050:  P29||Q051:  P38||Q052:  P33||Q053:   P8||Q054:  P26||Q055:  P28||Q056:  P22||Q057:   P9||Q058:  P11||Q059:  P14|
+|Q060:  P40||Q061:  P32||Q062:   P4||Q063:   P5||Q064:   P6||Q065:  P36||Q066:  P37||Q067:  P18||Q068:  P15||Q069:  P29|
+|Q070:  P38||Q071:  P33||Q072:   P8||Q073:  P30||Q074:  P26||Q075:  P28||Q076:   P9||Q077:  P11||Q078:  P14||Q079:  P40|
+|Q080:  P32||Q081:  P39||Q082:   P4||Q083:   P5||Q084:  P37||Q085:  P18||Q086:  P15||Q087:  P29||Q088:  P23||Q089:  P21|
+|Q090:  P13||Q091:   P8||Q092:  P24||Q093:  P30||Q094:  P34||Q095:  P26||Q096:   P9||Q097:  P14||Q098:  P40||Q099:  P32|
+|Q100:   P4||Q101:   P5||Q102:  P37||Q103:  P18||Q104:  P15||Q105:  P29||Q106:  P23||Q107:  P21||Q108:  P13||Q109:   P8|
+|Q110:  P24||Q111:  P30||Q112:  P34||Q113:  P26||Q114:   P9||Q115:  P14||Q116:  P40||Q117:  P32||Q118:  P37||Q119:  P18|
+|Q120:  P15||Q121:  P23||Q122:  P21||Q123:  P13||Q124:   P8||Q125:  P24||Q126:  P30||Q127:  P26||Q128:   P9||Q129:  P14|
+|Q130:  P40||Q131:  P32||Q132:  P37||Q133:  P18||Q134:  P15||Q135:  P23||Q136:  P21||Q137:   P8||Q138:  P24||Q139:  P30|
+|Q140:  P26||Q141:   P9||Q142:  P32||Q143:  P37||Q144:  P15||Q145:  P23||Q146:  P21||Q147:  P24||Q148:  P30||Q149:  P26|
+|Q150:  P32||Q151:  P37||Q152:  P23||Q153:  P21||Q154:  P24||Q155:  P26||Q156:  P32||Q157:  P23||Q158:  P21||Q159:  P24|
+|Q160:  P32||Q161:  P23||Q162:  P21||Q163:  P24||Q164:  P21||Q165:  P24||Q166:  P21|
+Average turnaround time: 93.62857
+Average wait time: 53.03504
+Average response time: 46.57143
+Throughput: 0.20958084 processes per quantum
+
+
+RR run #3
+Statistics for priority 1
+Process Name: P5
+Arrival time: 63.829075
+Estimated runtime: 4.604625
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P6
+Arrival time: 48.755936
+Estimated runtime: 4.7343593
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 68.84647
+Estimated runtime: 8.912603
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P15
+Arrival time: 8.453495
+Estimated runtime: 5.7670293
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P21
+Arrival time: 61.127136
+Estimated runtime: 1.5154865
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P24
+Arrival time: 74.3855
+Estimated runtime: 5.8897753
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P27
+Arrival time: 14.125502
+Estimated runtime: 8.127006
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 54.01243
+Estimated runtime: 7.6998158
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 5.164627
+Estimated runtime: 0.7487978
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P40
+Arrival time: 53.34207
+Estimated runtime: 6.176983
+Priority: 1
+ AverageTurnaround: 
+
+
+Average turnaround time: 100.3
+Average wait time: 49.67813
+Average response time: 51.8
+Throughput: 0.062111802 processes per quantum
+
+Statistics for priority 2
+Process Name: P7
+Arrival time: 64.86517
+Estimated runtime: 8.565002
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P11
+Arrival time: 16.856
+Estimated runtime: 1.6254472
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P16
+Arrival time: 71.07204
+Estimated runtime: 6.880788
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P22
+Arrival time: 14.748603
+Estimated runtime: 6.4206557
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 54.635685
+Estimated runtime: 8.549844
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P32
+Arrival time: 59.73835
+Estimated runtime: 5.5135374
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P34
+Arrival time: 71.744804
+Estimated runtime: 0.665359
+Priority: 2
+ AverageTurnaround: 
+
+
+Average turnaround time: 110.0
+Average wait time: 54.01696
+Average response time: 59.57143
+Throughput: 0.04347826 processes per quantum
+
+Statistics for priority 3
+Process Name: P1
+Arrival time: 53.542053
+Estimated runtime: 4.0972805
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P2
+Arrival time: 16.397127
+Estimated runtime: 0.59491926
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P4
+Arrival time: 66.64295
+Estimated runtime: 0.3069408
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 10.127693
+Estimated runtime: 0.52844197
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P12
+Arrival time: 44.48757
+Estimated runtime: 7.822894
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 32.580452
+Estimated runtime: 0.8052413
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P31
+Arrival time: 37.224926
+Estimated runtime: 0.33977318
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 62.008205
+Estimated runtime: 7.091716
+Priority: 3
+ AverageTurnaround: 
+
+
+Average turnaround time: 72.875
+Average wait time: 29.800226
+Average response time: 45.625
+Throughput: 0.049689442 processes per quantum
+
+Statistics for priority 4
+Process Name: P3
+Arrival time: 14.953912
+Estimated runtime: 2.6838381
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P8
+Arrival time: 53.720028
+Estimated runtime: 2.454443
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 1.8322818
+Estimated runtime: 6.0931997
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P19
+Arrival time: 26.930557
+Estimated runtime: 0.93810385
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 26.909266
+Estimated runtime: 6.5483956
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P26
+Arrival time: 10.22714
+Estimated runtime: 1.6746113
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 51.905254
+Estimated runtime: 3.8237221
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 65.81255
+Estimated runtime: 6.729102
+Priority: 4
+ AverageTurnaround: 
+
+
+Average turnaround time: 59.625
+Average wait time: 24.220451
+Average response time: 36.0
+Throughput: 0.049689442 processes per quantum
+
+
+
+Overall statistics
+Process Name: P1
+Arrival time: 53.542053
+Estimated runtime: 4.0972805
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P2
+Arrival time: 16.397127
+Estimated runtime: 0.59491926
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P3
+Arrival time: 14.953912
+Estimated runtime: 2.6838381
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P4
+Arrival time: 66.64295
+Estimated runtime: 0.3069408
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P5
+Arrival time: 63.829075
+Estimated runtime: 4.604625
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P6
+Arrival time: 48.755936
+Estimated runtime: 4.7343593
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 64.86517
+Estimated runtime: 8.565002
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P8
+Arrival time: 53.720028
+Estimated runtime: 2.454443
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 1.8322818
+Estimated runtime: 6.0931997
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 10.127693
+Estimated runtime: 0.52844197
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P11
+Arrival time: 16.856
+Estimated runtime: 1.6254472
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P12
+Arrival time: 44.48757
+Estimated runtime: 7.822894
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 68.84647
+Estimated runtime: 8.912603
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P15
+Arrival time: 8.453495
+Estimated runtime: 5.7670293
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P16
+Arrival time: 71.07204
+Estimated runtime: 6.880788
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 32.580452
+Estimated runtime: 0.8052413
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P19
+Arrival time: 26.930557
+Estimated runtime: 0.93810385
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P21
+Arrival time: 61.127136
+Estimated runtime: 1.5154865
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P22
+Arrival time: 14.748603
+Estimated runtime: 6.4206557
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P24
+Arrival time: 74.3855
+Estimated runtime: 5.8897753
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 26.909266
+Estimated runtime: 6.5483956
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P26
+Arrival time: 10.22714
+Estimated runtime: 1.6746113
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P27
+Arrival time: 14.125502
+Estimated runtime: 8.127006
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 54.01243
+Estimated runtime: 7.6998158
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 51.905254
+Estimated runtime: 3.8237221
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 54.635685
+Estimated runtime: 8.549844
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P31
+Arrival time: 37.224926
+Estimated runtime: 0.33977318
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P32
+Arrival time: 59.73835
+Estimated runtime: 5.5135374
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 62.008205
+Estimated runtime: 7.091716
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P34
+Arrival time: 71.744804
+Estimated runtime: 0.665359
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 65.81255
+Estimated runtime: 6.729102
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 5.164627
+Estimated runtime: 0.7487978
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P40
+Arrival time: 53.34207
+Estimated runtime: 6.176983
+Priority: 1
+ AverageTurnaround: 
+
+
+|Q000: wait||Q001: wait||Q002:   P9||Q003:   P9||Q004:   P9||Q005:   P9||Q006:  P37||Q007:   P9||Q008:   P9||Q009:  P15|
+|Q010:   P9||Q011:  P15||Q012:  P10||Q013:  P26||Q014:  P15||Q015:  P26||Q016:  P27||Q017:  P22||Q018:   P3||Q019:  P15|
+|Q020:   P2||Q021:  P11||Q022:  P27||Q023:  P22||Q024:   P3||Q025:  P15||Q026:  P11||Q027:  P27||Q028:  P22||Q029:   P3|
+|Q030:  P15||Q031:  P25||Q032:  P19||Q033:  P27||Q034:  P22||Q035:  P25||Q036:  P18||Q037:  P27||Q038:  P22||Q039:  P25|
+|Q040:  P31||Q041:  P27||Q042:  P22||Q043:  P25||Q044:  P27||Q045:  P22||Q046:  P25||Q047:  P12||Q048:  P27||Q049:  P25|
+|Q050:  P12||Q051:   P6||Q052:  P27||Q053:  P25||Q054:  P12||Q055:  P29||Q056:   P6||Q057:  P40||Q058:   P1||Q059:   P8|
+|Q060:  P28||Q061:  P30||Q062:  P12||Q063:  P29||Q064:   P6||Q065:  P40||Q066:   P1||Q067:  P32||Q068:   P8||Q069:  P28|
+|Q070:  P21||Q071:  P30||Q072:  P33||Q073:  P12||Q074:   P5||Q075:  P29||Q076:   P7||Q077:   P6||Q078:  P36||Q079:  P40|
+|Q080:   P4||Q081:   P1||Q082:  P32||Q083:  P13||Q084:   P8||Q085:  P28||Q086:  P21||Q087:  P16||Q088:  P34||Q089:  P30|
+|Q090:  P33||Q091:  P12||Q092:  P24||Q093:   P5||Q094:  P29||Q095:   P7||Q096:   P6||Q097:  P36||Q098:  P40||Q099:   P1|
+|Q100:  P32||Q101:  P13||Q102:  P28||Q103:  P16||Q104:  P30||Q105:  P33||Q106:  P12||Q107:  P24||Q108:   P5||Q109:   P7|
+|Q110:  P36||Q111:  P40||Q112:   P1||Q113:  P32||Q114:  P13||Q115:  P28||Q116:  P16||Q117:  P30||Q118:  P33||Q119:  P12|
+|Q120:  P24||Q121:   P5||Q122:   P7||Q123:  P36||Q124:  P40||Q125:  P32||Q126:  P13||Q127:  P28||Q128:  P16||Q129:  P30|
+|Q130:  P33||Q131:  P24||Q132:   P5||Q133:   P7||Q134:  P36||Q135:  P40||Q136:  P32||Q137:  P13||Q138:  P28||Q139:  P16|
+|Q140:  P30||Q141:  P33||Q142:  P24||Q143:   P7||Q144:  P36||Q145:  P13||Q146:  P28||Q147:  P16||Q148:  P30||Q149:  P33|
+|Q150:  P24||Q151:   P7||Q152:  P36||Q153:  P13||Q154:  P16||Q155:  P30||Q156:  P33||Q157:   P7||Q158:  P13||Q159:   P7|
+|Q160:  P13|
+Average turnaround time: 85.84849
+Average wait time: 39.608044
+Average response time: 48.121212
+Throughput: 0.20496894 processes per quantum
+
+
+RR run #4
+Statistics for priority 1
+Process Name: P16
+Arrival time: 33.712036
+Estimated runtime: 9.4208145
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P19
+Arrival time: 38.2662
+Estimated runtime: 6.000625
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P23
+Arrival time: 10.354475
+Estimated runtime: 1.9032656
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 39.5762
+Estimated runtime: 6.2079616
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 1.6034997
+Estimated runtime: 6.447258
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 48.631565
+Estimated runtime: 1.2288893
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 25.75717
+Estimated runtime: 8.661372
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 69.632355
+Estimated runtime: 9.529836
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P38
+Arrival time: 31.202543
+Estimated runtime: 4.2671037
+Priority: 1
+ AverageTurnaround: 
+
+
+Average turnaround time: 113.888885
+Average wait time: 74.73298
+Average response time: 41.333332
+Throughput: 0.049723756 processes per quantum
+
+Statistics for priority 2
+Process Name: P3
+Arrival time: 9.382798
+Estimated runtime: 0.57348263
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P4
+Arrival time: 43.37496
+Estimated runtime: 3.4727702
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 65.22884
+Estimated runtime: 8.916609
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P8
+Arrival time: 32.85549
+Estimated runtime: 9.921562
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P15
+Arrival time: 70.80052
+Estimated runtime: 4.868656
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P26
+Arrival time: 15.612224
+Estimated runtime: 2.703727
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P35
+Arrival time: 36.592186
+Estimated runtime: 4.878219
+Priority: 2
+ AverageTurnaround: 
+
+
+Average turnaround time: 112.28571
+Average wait time: 68.11685
+Average response time: 49.142857
+Throughput: 0.038674034 processes per quantum
+
+Statistics for priority 3
+Process Name: P6
+Arrival time: 21.832603
+Estimated runtime: 0.93043745
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 34.83609
+Estimated runtime: 6.8150363
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P12
+Arrival time: 8.867275
+Estimated runtime: 4.5486746
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P14
+Arrival time: 49.42504
+Estimated runtime: 0.30950236
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 30.92803
+Estimated runtime: 8.594046
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 38.94822
+Estimated runtime: 1.7900629
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 12.517748
+Estimated runtime: 4.6482162
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P39
+Arrival time: 12.838318
+Estimated runtime: 1.6558555
+Priority: 3
+ AverageTurnaround: 
+
+
+Average turnaround time: 68.75
+Average wait time: 38.814358
+Average response time: 32.0
+Throughput: 0.044198897 processes per quantum
+
+Statistics for priority 4
+Process Name: P2
+Arrival time: 75.11312
+Estimated runtime: 0.8321722
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P5
+Arrival time: 37.475292
+Estimated runtime: 3.8528416
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 38.738182
+Estimated runtime: 3.6667142
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 40.9675
+Estimated runtime: 3.0142746
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P17
+Arrival time: 30.893852
+Estimated runtime: 2.9899619
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P20
+Arrival time: 73.46188
+Estimated runtime: 8.347143
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P21
+Arrival time: 49.309002
+Estimated runtime: 6.9559484
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P24
+Arrival time: 45.7931
+Estimated runtime: 3.1231418
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P27
+Arrival time: 64.066124
+Estimated runtime: 7.207312
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P34
+Arrival time: 16.310703
+Estimated runtime: 6.9628124
+Priority: 4
+ AverageTurnaround: 
+
+
+Average turnaround time: 120.9
+Average wait time: 68.9919
+Average response time: 60.5
+Throughput: 0.055248618 processes per quantum
+
+
+
+Overall statistics
+Process Name: P2
+Arrival time: 75.11312
+Estimated runtime: 0.8321722
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P3
+Arrival time: 9.382798
+Estimated runtime: 0.57348263
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P4
+Arrival time: 43.37496
+Estimated runtime: 3.4727702
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P5
+Arrival time: 37.475292
+Estimated runtime: 3.8528416
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P6
+Arrival time: 21.832603
+Estimated runtime: 0.93043745
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 65.22884
+Estimated runtime: 8.916609
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P8
+Arrival time: 32.85549
+Estimated runtime: 9.921562
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 38.738182
+Estimated runtime: 3.6667142
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 34.83609
+Estimated runtime: 6.8150363
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P12
+Arrival time: 8.867275
+Estimated runtime: 4.5486746
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 40.9675
+Estimated runtime: 3.0142746
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P14
+Arrival time: 49.42504
+Estimated runtime: 0.30950236
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P15
+Arrival time: 70.80052
+Estimated runtime: 4.868656
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P16
+Arrival time: 33.712036
+Estimated runtime: 9.4208145
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P17
+Arrival time: 30.893852
+Estimated runtime: 2.9899619
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 30.92803
+Estimated runtime: 8.594046
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P19
+Arrival time: 38.2662
+Estimated runtime: 6.000625
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P20
+Arrival time: 73.46188
+Estimated runtime: 8.347143
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P21
+Arrival time: 49.309002
+Estimated runtime: 6.9559484
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P23
+Arrival time: 10.354475
+Estimated runtime: 1.9032656
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P24
+Arrival time: 45.7931
+Estimated runtime: 3.1231418
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 39.5762
+Estimated runtime: 6.2079616
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P26
+Arrival time: 15.612224
+Estimated runtime: 2.703727
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P27
+Arrival time: 64.066124
+Estimated runtime: 7.207312
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 1.6034997
+Estimated runtime: 6.447258
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 48.631565
+Estimated runtime: 1.2288893
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 38.94822
+Estimated runtime: 1.7900629
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 25.75717
+Estimated runtime: 8.661372
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P34
+Arrival time: 16.310703
+Estimated runtime: 6.9628124
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P35
+Arrival time: 36.592186
+Estimated runtime: 4.878219
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 12.517748
+Estimated runtime: 4.6482162
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 69.632355
+Estimated runtime: 9.529836
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P38
+Arrival time: 31.202543
+Estimated runtime: 4.2671037
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P39
+Arrival time: 12.838318
+Estimated runtime: 1.6558555
+Priority: 3
+ AverageTurnaround: 
+
+
+|Q000: wait||Q001: wait||Q002:  P28||Q003:  P28||Q004:  P28||Q005:  P28||Q006:  P28||Q007:  P28||Q008:  P28||Q009:  P12|
+|Q010:   P3||Q011:  P12||Q012:  P23||Q013:  P12||Q014:  P36||Q015:  P39||Q016:  P23||Q017:  P12||Q018:  P36||Q019:  P26|
+|Q020:  P39||Q021:  P34||Q022:  P12||Q023:  P36||Q024:  P26||Q025:   P6||Q026:  P34||Q027:  P36||Q028:  P26||Q029:  P33|
+|Q030:  P34||Q031:  P36||Q032:  P33||Q033:  P17||Q034:  P18||Q035:  P34||Q036:  P38||Q037:   P8||Q038:  P33||Q039:  P16|
+|Q040:  P17||Q041:  P10||Q042:  P18||Q043:  P34||Q044:  P35||Q045:  P38||Q046:   P5||Q047:   P8||Q048:  P19||Q049:   P9|
+|Q050:  P30||Q051:  P33||Q052:  P25||Q053:  P16||Q054:  P13||Q055:  P17||Q056:  P10||Q057:  P18||Q058:   P4||Q059:  P34|
+|Q060:  P35||Q061:  P24||Q062:  P38||Q063:   P5||Q064:   P8||Q065:  P29||Q066:  P19||Q067:  P21||Q068:  P14||Q069:   P9|
+|Q070:  P30||Q071:  P33||Q072:  P25||Q073:  P16||Q074:  P13||Q075:  P10||Q076:  P18||Q077:   P4||Q078:  P34||Q079:  P35|
+|Q080:  P24||Q081:  P38||Q082:   P5||Q083:  P27||Q084:   P8||Q085:   P7||Q086:  P29||Q087:  P19||Q088:  P21||Q089:  P37|
+|Q090:   P9||Q091:  P15||Q092:  P33||Q093:  P25||Q094:  P20||Q095:  P16||Q096:  P13||Q097:   P2||Q098:  P10||Q099:  P18|
+|Q100:   P4||Q101:  P35||Q102:  P24||Q103:  P38||Q104:   P5||Q105:  P27||Q106:   P8||Q107:   P7||Q108:  P19||Q109:  P21|
+|Q110:  P37||Q111:   P9||Q112:  P15||Q113:  P33||Q114:  P25||Q115:  P20||Q116:  P16||Q117:  P13||Q118:  P10||Q119:  P18|
+|Q120:   P4||Q121:  P35||Q122:  P24||Q123:  P27||Q124:   P8||Q125:   P7||Q126:  P19||Q127:  P21||Q128:  P37||Q129:  P15|
+|Q130:  P33||Q131:  P25||Q132:  P20||Q133:  P16||Q134:  P10||Q135:  P18||Q136:  P27||Q137:   P8||Q138:   P7||Q139:  P19|
+|Q140:  P21||Q141:  P37||Q142:  P15||Q143:  P33||Q144:  P25||Q145:  P20||Q146:  P16||Q147:  P10||Q148:  P18||Q149:  P27|
+|Q150:   P8||Q151:   P7||Q152:  P19||Q153:  P21||Q154:  P37||Q155:  P15||Q156:  P25||Q157:  P20||Q158:  P16||Q159:  P18|
+|Q160:  P27||Q161:   P8||Q162:   P7||Q163:  P21||Q164:  P37||Q165:  P20||Q166:  P16||Q167:  P27||Q168:   P8||Q169:   P7|
+|Q170:  P37||Q171:  P20||Q172:  P16||Q173:  P27||Q174:   P7||Q175:  P37||Q176:  P20||Q177:   P7||Q178:  P37||Q179:  P20|
+|Q180:  P37|
+Average turnaround time: 105.0
+Average wait time: 63.230835
+Average response time: 46.382355
+Throughput: 0.1878453 processes per quantum
+
+
+RR run #5
+Statistics for priority 1
+Process Name: P2
+Arrival time: 39.48041
+Estimated runtime: 1.6979269
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P4
+Arrival time: 58.261833
+Estimated runtime: 0.5921854
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P6
+Arrival time: 11.5405655
+Estimated runtime: 4.2070055
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P19
+Arrival time: 72.5929
+Estimated runtime: 2.5752954
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P34
+Arrival time: 23.053715
+Estimated runtime: 7.590414
+Priority: 1
+ AverageTurnaround: 
+
+
+Average turnaround time: 94.6
+Average wait time: 50.281548
+Average response time: 53.0
+Throughput: 0.0295858 processes per quantum
+
+Statistics for priority 2
+Process Name: P1
+Arrival time: 12.4283905
+Estimated runtime: 2.6368012
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 62.275627
+Estimated runtime: 5.011771
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 31.66422
+Estimated runtime: 4.3347507
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P14
+Arrival time: 12.617726
+Estimated runtime: 8.078401
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P20
+Arrival time: 52.2652
+Estimated runtime: 7.5071487
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P21
+Arrival time: 18.08276
+Estimated runtime: 8.918833
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 53.32056
+Estimated runtime: 4.849408
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 39.820583
+Estimated runtime: 1.370513
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P32
+Arrival time: 59.0245
+Estimated runtime: 9.552427
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 12.835243
+Estimated runtime: 2.9769652
+Priority: 2
+ AverageTurnaround: 
+
+
+Average turnaround time: 116.3
+Average wait time: 75.34282
+Average response time: 46.6
+Throughput: 0.0591716 processes per quantum
+
+Statistics for priority 3
+Process Name: P5
+Arrival time: 32.97851
+Estimated runtime: 5.212789
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P8
+Arrival time: 25.300604
+Estimated runtime: 2.9339614
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 44.84349
+Estimated runtime: 0.5789539
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 44.842617
+Estimated runtime: 3.9911819
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P15
+Arrival time: 38.828526
+Estimated runtime: 9.098266
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 6.600289
+Estimated runtime: 8.015668
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P23
+Arrival time: 40.177788
+Estimated runtime: 4.098171
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P31
+Arrival time: 43.169823
+Estimated runtime: 2.3166237
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 31.12051
+Estimated runtime: 2.679433
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P40
+Arrival time: 52.936405
+Estimated runtime: 3.9382358
+Priority: 3
+ AverageTurnaround: 
+
+
+Average turnaround time: 103.0
+Average wait time: 62.63382
+Average response time: 47.0
+Throughput: 0.0591716 processes per quantum
+
+Statistics for priority 4
+Process Name: P12
+Arrival time: 21.91767
+Estimated runtime: 4.861368
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P17
+Arrival time: 62.327816
+Estimated runtime: 6.0762577
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 72.12462
+Estimated runtime: 3.8902435
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 17.206448
+Estimated runtime: 6.337053
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P35
+Arrival time: 68.00472
+Estimated runtime: 0.73699075
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 58.79656
+Estimated runtime: 4.263851
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P39
+Arrival time: 41.638195
+Estimated runtime: 5.0244102
+Priority: 4
+ AverageTurnaround: 
+
+
+Average turnaround time: 128.14285
+Average wait time: 74.82768
+Average response time: 64.57143
+Throughput: 0.041420117 processes per quantum
+
+
+
+Overall statistics
+Process Name: P1
+Arrival time: 12.4283905
+Estimated runtime: 2.6368012
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P2
+Arrival time: 39.48041
+Estimated runtime: 1.6979269
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P4
+Arrival time: 58.261833
+Estimated runtime: 0.5921854
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P5
+Arrival time: 32.97851
+Estimated runtime: 5.212789
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P6
+Arrival time: 11.5405655
+Estimated runtime: 4.2070055
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P7
+Arrival time: 62.275627
+Estimated runtime: 5.011771
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P8
+Arrival time: 25.300604
+Estimated runtime: 2.9339614
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P9
+Arrival time: 44.84349
+Estimated runtime: 0.5789539
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P10
+Arrival time: 31.66422
+Estimated runtime: 4.3347507
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P12
+Arrival time: 21.91767
+Estimated runtime: 4.861368
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P13
+Arrival time: 44.842617
+Estimated runtime: 3.9911819
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P14
+Arrival time: 12.617726
+Estimated runtime: 8.078401
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P15
+Arrival time: 38.828526
+Estimated runtime: 9.098266
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P17
+Arrival time: 62.327816
+Estimated runtime: 6.0762577
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P18
+Arrival time: 6.600289
+Estimated runtime: 8.015668
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P19
+Arrival time: 72.5929
+Estimated runtime: 2.5752954
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P20
+Arrival time: 52.2652
+Estimated runtime: 7.5071487
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P21
+Arrival time: 18.08276
+Estimated runtime: 8.918833
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P23
+Arrival time: 40.177788
+Estimated runtime: 4.098171
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P25
+Arrival time: 72.12462
+Estimated runtime: 3.8902435
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P28
+Arrival time: 53.32056
+Estimated runtime: 4.849408
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P29
+Arrival time: 17.206448
+Estimated runtime: 6.337053
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P30
+Arrival time: 39.820583
+Estimated runtime: 1.370513
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P31
+Arrival time: 43.169823
+Estimated runtime: 2.3166237
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P32
+Arrival time: 59.0245
+Estimated runtime: 9.552427
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P33
+Arrival time: 12.835243
+Estimated runtime: 2.9769652
+Priority: 2
+ AverageTurnaround: 
+
+Process Name: P34
+Arrival time: 23.053715
+Estimated runtime: 7.590414
+Priority: 1
+ AverageTurnaround: 
+
+Process Name: P35
+Arrival time: 68.00472
+Estimated runtime: 0.73699075
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P36
+Arrival time: 58.79656
+Estimated runtime: 4.263851
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P37
+Arrival time: 31.12051
+Estimated runtime: 2.679433
+Priority: 3
+ AverageTurnaround: 
+
+Process Name: P39
+Arrival time: 41.638195
+Estimated runtime: 5.0244102
+Priority: 4
+ AverageTurnaround: 
+
+Process Name: P40
+Arrival time: 52.936405
+Estimated runtime: 3.9382358
+Priority: 3
+ AverageTurnaround: 
+
+
+|Q000: wait||Q001: wait||Q002: wait||Q003: wait||Q004: wait||Q005: wait||Q006: wait||Q007:  P18||Q008:  P18||Q009:  P18|
+|Q010:  P18||Q011:  P18||Q012:   P6||Q013:  P18||Q014:   P1||Q015:  P14||Q016:  P33||Q017:   P6||Q018:  P18||Q019:   P1|
+|Q020:  P14||Q021:  P33||Q022:  P29||Q023:   P6||Q024:  P21||Q025:  P18||Q026:   P1||Q027:  P14||Q028:  P12||Q029:  P33|
+|Q030:  P29||Q031:  P34||Q032:   P6||Q033:  P21||Q034:   P8||Q035:  P18||Q036:  P14||Q037:  P12||Q038:  P29||Q039:  P37|
+|Q040:  P10||Q041:  P34||Q042:   P5||Q043:   P6||Q044:  P21||Q045:   P8||Q046:  P14||Q047:  P12||Q048:  P15||Q049:  P29|
+|Q050:   P2||Q051:  P30||Q052:  P37||Q053:  P23||Q054:  P10||Q055:  P39||Q056:  P34||Q057:   P5||Q058:  P31||Q059:  P13|
+|Q060:   P9||Q061:  P21||Q062:   P8||Q063:  P14||Q064:  P12||Q065:  P15||Q066:  P29||Q067:   P2||Q068:  P30||Q069:  P20|
+|Q070:  P40||Q071:  P37||Q072:  P28||Q073:  P23||Q074:  P10||Q075:  P39||Q076:  P34||Q077:   P5||Q078:   P4||Q079:  P36|
+|Q080:  P31||Q081:  P32||Q082:  P13||Q083:  P21||Q084:   P7||Q085:  P17||Q086:  P14||Q087:  P12||Q088:  P15||Q089:  P29|
+|Q090:  P35||Q091:  P20||Q092:  P40||Q093:  P25||Q094:  P19||Q095:  P28||Q096:  P23||Q097:  P10||Q098:  P39||Q099:  P34|
+|Q100:   P5||Q101:  P36||Q102:  P31||Q103:  P32||Q104:  P13||Q105:  P21||Q106:   P7||Q107:  P17||Q108:  P14||Q109:  P15|
+|Q110:  P29||Q111:  P20||Q112:  P40||Q113:  P25||Q114:  P19|

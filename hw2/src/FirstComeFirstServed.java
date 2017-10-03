@@ -158,10 +158,7 @@ public class FirstComeFirstServed {
 }
 
 class SamJob {
-<<<<<<< HEAD
 
-=======
->>>>>>> fb60c26000b971f24ef4fb6121a10ab1455a5974
     private String jobName; // name of job
     private int arrivalTime; // arrival instance
     private float responseTime; // amount of time for which a was used for processing instructions

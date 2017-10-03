@@ -1,6 +1,3 @@
-package hw2;
-
-
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -12,7 +9,7 @@ import java.util.Random;
 /**
  * Round robin algorithm
  */
-public class RR
+public class RoundRobin
 {
     private static final float TIME_SLICE = 1;
     
@@ -313,7 +310,7 @@ public static class SimProcess
     
     /**
      * Updates the arrival time of the process
-     * @param timeDec The amount to be decremented from the arrival time, measured in quanta.
+     * @param waitTime The amount to be decremented from the arrival time, measured in quanta.
      */
     public void waitForArrival(float waitTime)
     {
@@ -653,7 +650,7 @@ private static void testRR() throws FileNotFoundException
         for(int i = 1; i <= MAX_ALG_ITER; i++)
         {
             out.println("RR run #" + i);
-            out.println(RR.run(SimProcess.GenMultiple(MAX_PROCS_RR), TARGET_TIME) + NL + NL);
+            out.println(RoundRobin.run(SimProcess.GenMultiple(MAX_PROCS_RR), TARGET_TIME) + NL + NL);
         }
     }
     catch (Exception e){
