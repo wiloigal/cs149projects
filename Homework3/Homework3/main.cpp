@@ -7,6 +7,14 @@
 //
 
 #include <iostream>
+#include "Customer.hpp"
+#include "Seller.hpp"
+#include "HighLevelSeller.hpp"
+#include "MidLevelSeller.hpp"
+#include "LowLevelSeller.hpp"
+#include "Seat.hpp"
+#include "Ampitheatre.hpp"
+
 using namespace std;
 
 int main(int argc, const char * argv[]) {

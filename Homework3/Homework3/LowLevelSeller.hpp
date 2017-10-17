@@ -10,5 +10,9 @@
 #define LowLevelSeller_hpp
 
 #include <stdio.h>
+#include "Seller.hpp"
+class LowLevelSeller : public Seller{
+    
+};
 
 #endif /* LowLevelSeller_hpp */

@@ -10,5 +10,9 @@
 #define MidLevelSeller_hpp
 
 #include <stdio.h>
+#include "Seller.hpp"
+class MidLevelSeller: public Seller{
+    
+};
 
 #endif /* MidLevelSeller_hpp */

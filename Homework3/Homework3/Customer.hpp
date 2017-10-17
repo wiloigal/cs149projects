@@ -11,4 +11,14 @@
 
 #include <stdio.h>
 
+
+
+/**
+ * This class holds information for someone that wants to purchase tickets from the seller
+ *
+ */
+class Customer{
+    
+};
+
 #endif /* Customer_hpp */

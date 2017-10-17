@@ -10,7 +10,16 @@
 #define Seller_hpp
 
 #include <stdio.h>
+#include <queue>
 
+#include "Customer.hpp"
+using namespace std;
+class Seller{
+    //All sellers have a queue of customers
+    queue<Customer> customers;
+    
+    
+};
 
 
 #endif /* Seller_hpp */

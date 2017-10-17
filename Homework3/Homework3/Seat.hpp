@@ -10,5 +10,8 @@
 #define Seat_hpp
 
 #include <stdio.h>
+class Seat{
+    
+};
 
 #endif /* Seat_hpp */
