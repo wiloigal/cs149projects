@@ -10,13 +10,24 @@
 #define Seller_hpp
 
 #include <stdio.h>
+#include <iostream>
 #include <queue>
 
 #include "Customer.hpp"
 using namespace std;
 class Seller{
-    //All sellers have a queue of customers
-    queue<Customer> customers;
+    
+protected:
+    //All sellers have a name, queue of customers
+    string name;
+    priority_queue<Customer> customers;
+    
+public:
+    Seller(string n);
+    void queueCustomer(Customer c);
+    void dequeueCustomer();
+    priority_queue<Customer> getCustomers();
+    
     
     
 };

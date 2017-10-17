@@ -21,6 +21,9 @@
  */
 class Ampitheatre
 {
+private:
     Seat seats[10][10];
+public:
+    
 };
 #endif /* Ampitheatre_hpp */

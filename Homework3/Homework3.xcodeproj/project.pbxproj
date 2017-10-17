@@ -15,6 +15,9 @@
 		035279801F95D0EF00FA7CE9 /* LowLevelSeller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0352797E1F95D0EF00FA7CE9 /* LowLevelSeller.cpp */; };
 		035279831F95D10400FA7CE9 /* Seat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035279811F95D10400FA7CE9 /* Seat.cpp */; };
 		035279861F95D21100FA7CE9 /* Ampitheatre.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035279841F95D21100FA7CE9 /* Ampitheatre.cpp */; };
+		035279891F968D2D00FA7CE9 /* HighLevelCustomer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 035279871F968D2D00FA7CE9 /* HighLevelCustomer.cpp */; };
+		0352798C1F968D3900FA7CE9 /* MidLevelCustomer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0352798A1F968D3900FA7CE9 /* MidLevelCustomer.cpp */; };
+		0352798F1F968D4500FA7CE9 /* LowLevelCustomer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0352798D1F968D4500FA7CE9 /* LowLevelCustomer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +49,12 @@
 		035279821F95D10400FA7CE9 /* Seat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Seat.hpp; sourceTree = "<group>"; };
 		035279841F95D21100FA7CE9 /* Ampitheatre.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ampitheatre.cpp; sourceTree = "<group>"; };
 		035279851F95D21100FA7CE9 /* Ampitheatre.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ampitheatre.hpp; sourceTree = "<group>"; };
+		035279871F968D2D00FA7CE9 /* HighLevelCustomer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HighLevelCustomer.cpp; sourceTree = "<group>"; };
+		035279881F968D2D00FA7CE9 /* HighLevelCustomer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HighLevelCustomer.hpp; sourceTree = "<group>"; };
+		0352798A1F968D3900FA7CE9 /* MidLevelCustomer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MidLevelCustomer.cpp; sourceTree = "<group>"; };
+		0352798B1F968D3900FA7CE9 /* MidLevelCustomer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MidLevelCustomer.hpp; sourceTree = "<group>"; };
+		0352798D1F968D4500FA7CE9 /* LowLevelCustomer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LowLevelCustomer.cpp; sourceTree = "<group>"; };
+		0352798E1F968D4500FA7CE9 /* LowLevelCustomer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LowLevelCustomer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,12 @@
 				035279581F95CCAE00FA7CE9 /* main.cpp */,
 				035279751F95D0BD00FA7CE9 /* Customer.cpp */,
 				035279761F95D0BD00FA7CE9 /* Customer.hpp */,
+				035279871F968D2D00FA7CE9 /* HighLevelCustomer.cpp */,
+				035279881F968D2D00FA7CE9 /* HighLevelCustomer.hpp */,
+				0352798A1F968D3900FA7CE9 /* MidLevelCustomer.cpp */,
+				0352798B1F968D3900FA7CE9 /* MidLevelCustomer.hpp */,
+				0352798D1F968D4500FA7CE9 /* LowLevelCustomer.cpp */,
+				0352798E1F968D4500FA7CE9 /* LowLevelCustomer.hpp */,
 				0352796F1F95CFD300FA7CE9 /* Seller.cpp */,
 				035279701F95CFD300FA7CE9 /* Seller.hpp */,
 				035279781F95D0CD00FA7CE9 /* HighLevelSeller.cpp */,
@@ -158,10 +173,13 @@
 				035279711F95CFD300FA7CE9 /* Seller.cpp in Sources */,
 				035279591F95CCAE00FA7CE9 /* main.cpp in Sources */,
 				0352797D1F95D0DE00FA7CE9 /* MidLevelSeller.cpp in Sources */,
+				035279891F968D2D00FA7CE9 /* HighLevelCustomer.cpp in Sources */,
 				035279861F95D21100FA7CE9 /* Ampitheatre.cpp in Sources */,
 				0352797A1F95D0CD00FA7CE9 /* HighLevelSeller.cpp in Sources */,
 				035279831F95D10400FA7CE9 /* Seat.cpp in Sources */,
 				035279771F95D0BD00FA7CE9 /* Customer.cpp in Sources */,
+				0352798C1F968D3900FA7CE9 /* MidLevelCustomer.cpp in Sources */,
+				0352798F1F968D4500FA7CE9 /* LowLevelCustomer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

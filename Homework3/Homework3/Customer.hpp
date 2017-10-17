@@ -10,7 +10,7 @@
 #define Customer_hpp
 
 #include <stdio.h>
-
+#include "Seat.hpp"
 
 
 /**
@@ -18,7 +18,18 @@
  *
  */
 class Customer{
-    
+protected:
+    int arrivalTime;
+    int processTime;
+public:
+    Customer();
+    Seat seat;
+    int getArrivalTime() const;
+    int getProcessTime() const;
+    bool operator <(const Customer & customerObj) const;
 };
+
+
+
 
 #endif /* Customer_hpp */

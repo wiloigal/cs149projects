@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "Seller.hpp"
 class HighLevelSeller: public Seller{
+    HighLevelSeller();
     
 };
 
