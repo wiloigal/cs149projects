@@ -26,6 +26,7 @@ public:
     Seller(string n);
     void queueCustomer(Customer c);
     void dequeueCustomer();
+    void processTicket();
     priority_queue<Customer> getCustomers();
     
     

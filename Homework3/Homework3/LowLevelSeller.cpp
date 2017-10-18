@@ -7,3 +7,6 @@
 //
 
 #include "LowLevelSeller.hpp"
+LowLevelSeller::LowLevelSeller(string n):Seller(n){
+    
+}

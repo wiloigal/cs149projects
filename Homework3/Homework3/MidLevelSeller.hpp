@@ -12,7 +12,8 @@
 #include <stdio.h>
 #include "Seller.hpp"
 class MidLevelSeller: public Seller{
-    
+public:
+    MidLevelSeller(string n);
 };
 
 #endif /* MidLevelSeller_hpp */

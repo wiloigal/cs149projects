@@ -12,7 +12,8 @@
 #include <stdio.h>
 #include "Seller.hpp"
 class HighLevelSeller: public Seller{
-    HighLevelSeller();
+public:
+    HighLevelSeller(string n);
     
 };
 

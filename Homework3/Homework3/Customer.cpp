@@ -5,12 +5,32 @@
 //  Created by Josh on 10/16/17.
 //  Copyright © 2017 Josh. All rights reserved.
 //
-#include <cstdlib>
-#include "Customer.hpp"
-Customer::Customer(){
-    arrivalTime = processTime = (rand()%(60 + 1 - 1) + 1);
-}
 
+////////
+//std::rand() % (Max + 1 - Min) + Min;
+/////////
+
+#include <cstdlib>
+#include <climits>
+#include "Customer.hpp"
+
+int RandomInt(int low, int high)
+{
+    if(RAND_MAX == INT_MAX)
+        return ( rand() % (1+high-low) + low );
+    else
+        return ( ((rand()*RAND_MAX)+rand()) % (1+high-low) + low );
+}
+Customer::Customer(){
+    arrivalTime = RandomInt(0,59);//(rand()%(60 + 1 - 1) + 1);
+    priority = RandomInt(1,3);
+    if(priority == 1)
+        processTime = RandomInt(1, 2);
+    else if(priority == 2)
+        processTime = RandomInt(2, 4);
+    else
+        processTime = RandomInt(4, 7);
+}
 
 
 bool Customer::operator <(const Customer & customerObj) const{
@@ -22,4 +42,9 @@ int Customer::getArrivalTime() const{
 int Customer::getProcessTime() const{
     return processTime;
 }
+int Customer::getPriority() const{
+    return priority;
+}
+
+
 

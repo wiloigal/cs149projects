@@ -14,7 +14,8 @@
 
 
 class LowLevelSeller : public Seller{
-    
+public:
+    LowLevelSeller(string n);
 };
 
 #endif /* LowLevelSeller_hpp */

@@ -7,3 +7,6 @@
 //
 
 #include "MidLevelSeller.hpp"
+MidLevelSeller::MidLevelSeller(string n):Seller(n){
+    
+}

@@ -21,11 +21,13 @@ class Customer{
 protected:
     int arrivalTime;
     int processTime;
+    int priority;
 public:
     Customer();
     Seat seat;
     int getArrivalTime() const;
     int getProcessTime() const;
+    int getPriority() const;
     bool operator <(const Customer & customerObj) const;
 };
 
