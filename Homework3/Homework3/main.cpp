@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <sstream>
 #include <cstdlib>
 #include <vector>
 #include <ctime>
@@ -30,11 +31,15 @@ const int NumbMidSellers = 3;
 const int NumbHighSeller = 1;
 
 int main(int argc, const char * argv[]) {
-    //THis will have to change because N is supposed to be a command line parameter
-    int N;//number of user
-    cout << "WELCOME TO TICKET_EXCHANGE!" << endl;
-    cout << "   How many customers will we receive?" << endl;
-    cin >> N;
+    stringstream sstream;
+    sstream << argv[1];
+    int N;//number of users
+    sstream >> N;
+    while (N == NULL){
+        cout << "Integer was not detected." << endl;
+        cout << "   How many customers will we receive?" << endl;
+        cin >> N;
+    }
     
     srand((int)time(0));
     
