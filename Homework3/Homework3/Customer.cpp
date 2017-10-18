@@ -6,23 +6,21 @@
 //  Copyright © 2017 Josh. All rights reserved.
 //
 
-////////
-//std::rand() % (Max + 1 - Min) + Min;
-/////////
-
 #include <cstdlib>
 #include <climits>
 #include "Customer.hpp"
 
-int RandomInt(int low, int high)
+int static RandomInt(int low, int high)
 {
+   
     if(RAND_MAX == INT_MAX)
         return ( rand() % (1+high-low) + low );
     else
         return ( ((rand()*RAND_MAX)+rand()) % (1+high-low) + low );
 }
 Customer::Customer(){
-    arrivalTime = RandomInt(0,59);//(rand()%(60 + 1 - 1) + 1);
+    
+    arrivalTime = RandomInt(0,59);
     priority = RandomInt(1,3);
     if(priority == 1)
         processTime = RandomInt(1, 2);

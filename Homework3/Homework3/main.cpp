@@ -9,6 +9,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <vector>
+#include <ctime>
 
 #include "Customer.hpp"
 #include "Seller.hpp"
@@ -28,19 +29,14 @@ const int NumbLowSellers = 6;
 const int NumbMidSellers = 3;
 const int NumbHighSeller = 1;
 
-
-
-
-
-/////////
-//std::rand() % (Max + 1 - Min) + Min;
-/////////
 int main(int argc, const char * argv[]) {
     //THis will have to change because N is supposed to be a command line parameter
     int N;//number of user
     cout << "WELCOME TO TICKET_EXCHANGE!" << endl;
     cout << "   How many customers will we receive?" << endl;
     cin >> N;
+    
+    srand((int)time(0));
 
     HighLevelSeller H = HighLevelSeller("H");
     
