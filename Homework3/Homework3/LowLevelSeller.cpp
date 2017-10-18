@@ -10,3 +10,6 @@
 LowLevelSeller::LowLevelSeller(string n):Seller(n){
     
 }
+LowLevelSeller::LowLevelSeller():Seller(){
+    
+}

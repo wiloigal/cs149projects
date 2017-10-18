@@ -23,6 +23,7 @@ protected:
     priority_queue<Customer> customers;
     
 public:
+    Seller();
     Seller(string n);
     void queueCustomer(Customer c);
     void dequeueCustomer();

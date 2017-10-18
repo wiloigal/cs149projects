@@ -22,6 +22,7 @@ protected:
     int arrivalTime;
     int processTime;
     int priority;
+    int name;
 public:
     Customer();
     Seat seat;

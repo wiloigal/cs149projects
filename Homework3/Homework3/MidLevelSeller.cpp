@@ -10,3 +10,6 @@
 MidLevelSeller::MidLevelSeller(string n):Seller(n){
     
 }
+MidLevelSeller::MidLevelSeller():Seller(){
+    
+}

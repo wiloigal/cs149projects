@@ -7,6 +7,9 @@
 //
 
 #include "Seller.hpp"
+Seller::Seller(){
+    
+}
 Seller::Seller(string n){
     name = n;
     customers = priority_queue<Customer>();

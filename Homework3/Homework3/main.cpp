@@ -37,7 +37,11 @@ int main(int argc, const char * argv[]) {
     cin >> N;
     
     srand((int)time(0));
-
+    
+    LowLevelSeller lowSellers[NumbLowSellers];
+    MidLevelSeller midSellers[NumbMidSellers];
+    vector<Customer> allCustomers = vector<Customer>();
+    
     HighLevelSeller H = HighLevelSeller("H");
     
     MidLevelSeller M1 = MidLevelSeller("M1");
@@ -51,20 +55,19 @@ int main(int argc, const char * argv[]) {
     LowLevelSeller L5 = LowLevelSeller("L5");
     LowLevelSeller L6 = LowLevelSeller("L6");
     
-    Customer* c1 = new Customer();
-    cout << c1->getPriority() << " " << c1->getArrivalTime() << " " << c1->getProcessTime() << endl;
-    Customer* c2 =  new Customer();
-    cout << c2->getPriority() << " " << c2->getArrivalTime() << " " << c2->getProcessTime() << endl;
-    Customer* c3 = new Customer();
-    cout << c3->getPriority() << " " << c3->getArrivalTime() << " " <<  c3->getProcessTime() <<endl;
+    for(int i = 1; i <= N; i++){
+        allCustomers.push_back(*new Customer());
+    }
+    lowSellers[0] = L1;
+    lowSellers[1] = L2;
+    lowSellers[2] = L3;
+    lowSellers[3] = L4;
+    lowSellers[4] = L5;
+    lowSellers[5] = L6;
     
-    Customer* c4 = new Customer();
-    cout << c4->getPriority() << " " << c4->getArrivalTime() << " " <<  c4->getProcessTime() <<endl;
-    priority_queue<Customer> allCustomers = priority_queue<Customer>();
-    Customer* c5 = new Customer();
-    cout << c5->getPriority() << " " << c5->getArrivalTime() << " " <<  c5->getProcessTime() <<endl;
-    
-    cout << endl;
+    midSellers[0] = M1;
+    midSellers[1] = M2;
+    midSellers[2] = M3;
     
     return 0;
 }
