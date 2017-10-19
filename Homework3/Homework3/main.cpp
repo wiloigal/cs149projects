@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <sstream>
 #include <cstdlib>
 #include <vector>
 #include <ctime>
@@ -30,8 +31,18 @@ const int NumbMidSellers = 3;
 const int NumbHighSeller = 1;
 
 int main(int argc, const char * argv[]) {
-    //THis will have to change because N is supposed to be a command line parameter
+    stringstream sstream;
+    sstream << argv[1];
     int N;//number of user
+    sstream >> N;
+    /** 
+        In case no command line argument detected, prompt user to input integer
+    */
+    while (N == NULL){
+        cout << "Integer was not detected." << endl;
+        cout << "   How many customers will we receive?" << endl;
+        cin >> N;
+    }
     cout << "WELCOME TO TICKET_EXCHANGE!" << endl;
     cout << "   How many customers will we receive?" << endl;
     cin >> N;
